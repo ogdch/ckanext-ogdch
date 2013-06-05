@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ckanext-ogdch
+Version: 0.0
+Summary: CKAN extension for OGD portal of Switzerland
+Home-page: http://www.liip.ch
+Author: Liip AG
+Author-email: ogd@liip.ch
+License: GPL
+Description: 	
+Platform: UNKNOWN
