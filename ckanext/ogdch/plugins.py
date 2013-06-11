@@ -18,7 +18,7 @@ class OgdchTheme(p.SingletonPlugin):
         return {'get_css_version': self.get_css_version }
 
     def get_css_version(self):
-        if config['ckanext.ogdch.css_version'] == 'rand':
+        if config['ckanext.ogdch.css_version'] == 'random':
             return random.randint(100000, 9999999999)
 
         return config['ckanext.ogdch.css_version']
