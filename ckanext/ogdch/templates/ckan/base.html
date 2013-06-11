@@ -2,5 +2,5 @@
 
 {% block styles %}
     {{ super() }}
-    <link rel="stylesheet" href="/latest-css/1" />
+    <link rel="stylesheet" href="/latest-css/{{ h.get_css_version() }}" />
 {% endblock %}
