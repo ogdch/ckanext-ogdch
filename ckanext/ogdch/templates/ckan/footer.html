@@ -1,0 +1,16 @@
+<footer class="site-footer container">
+  <div class="row-fluid">
+    {% block footer_content %}
+      <div class="span12">
+        <p>{{ _('Haben Sie Fragen zum OGD Portal? Melden Sie sich bei uns via E-Mail:') }} <a href="mailto:opendata@bar.admin.ch" title="opendata@bar.admin.ch">opendata@bar.admin.ch</a></p>
+        <p>{{ _('Bei Fragen zu den einzelnen Datensätzen, melden Sie sich bitte bei dem unter Autor definierten Bundesamt.') }}</p>
+      </div>
+    {% endblock %}
+  </div>
+
+  {% block footer_debug %}
+    {% if g.debug %}
+      {% include 'snippets/debug.html' %}
+    {% endif %}
+  {% endblock %}
+</footer>
