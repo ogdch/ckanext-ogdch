@@ -1,0 +1,11 @@
+{% set current_url = request.environ.CKAN_CURRENT_URL %}
+{% set current_lang = request.environ.CKAN_LANG %}
+<div class="span6">
+  <p id="portal-language">
+    <a href="{% url_for current_url, locale='de' %}" {% if current_lang == 'de' %}class="locale_current"{% endif %} title="{{ _('Deutsch') }}">{{ _('Deutsch') }}</a> | 
+    <a href="{% url_for current_url, locale='fr' %}" {% if current_lang == 'fr' %}class="locale_current"{% endif %} title="{{ _('Französisch') }}">{{ _('Französisch') }}</a> | 
+    <a href="{% url_for current_url, locale='it' %}" {% if current_lang == 'it' %}class="locale_current"{% endif %} title="{{ _('Italienisch') }}">{{ _('Italienisch') }}</a> | 
+    <a href="{% url_for current_url, locale='en' %}" {% if current_lang == 'en' %}class="locale_current"{% endif %} title="{{ _('English') }}">{{ _('English') }}</a>
+  </p>
+</div>
+

@@ -10,7 +10,7 @@
 
   <div class="row-fluid">
     <div class="span6 offset6" id="federal-authorities-bar">
-      <a href="http://www.admin.ch/" title="{{ _('Bundesverwaltung admin.ch') }}">{{ _('Bundesverwaltung admin.ch') }}</a>
+      <a href="http://www.admin.ch/?lang={{ request.environ.CKAN_LANG }}" title="{{ _('Bundesverwaltung admin.ch') }}">{{ _('Bundesverwaltung admin.ch') }}</a>
     </div>
   </div>
 
@@ -18,7 +18,7 @@
     {# The .header-image class hides the main text and uses image replacement for the title #}
     <hgroup class="span4 {{ g.header_class }}">
       {% block header_logo %}
-        <a class="logo" href="{{ h.url('home') }}"><img src="http://ogd.lo/bundles/ogdchcore/images/admin-logo.png" alt="{{ g.site_title }} Logo" title="{{ g.site_title }} Logo" /></a>
+        <a class="logo" href="/?_locale={{ request.environ.CKAN_LANG }}"><img src="http://ogd.lo/bundles/ogdchcore/images/admin-logo.png" alt="{{ g.site_title }} Logo" title="{{ g.site_title }} Logo" /></a>
       {% endblock %}
     </hgroup>
 
@@ -31,20 +31,16 @@
   <div class="row-fluid" id="language-bar">
     <div class="span6">
       <p>
-        <a href="/" title="{{ _('Startseite') }}">{{ _('Startseite') }}</a> | 
-        <a href="/index" title="{{ _('Übersicht') }}">{{ _('Übersicht') }}</a> | 
-        <a href="/contact" title="{{ _('Kontakt') }}">{{ _('Kontakt') }}</a> | 
-        <a href="/glossary" title="{{ _('Glossar') }}">{{ _('Glossar') }}</a>
+        <a href="/?_locale={{ request.environ.CKAN_LANG }}" title="{{ _('Startseite') }}">{{ _('Startseite') }}</a> | 
+        <a href="/{{ request.environ.CKAN_LANG }}/index" title="{{ _('Übersicht') }}">{{ _('Übersicht') }}</a> | 
+        <a href="/{{ request.environ.CKAN_LANG }}/contact" title="{{ _('Kontakt') }}">{{ _('Kontakt') }}</a> | 
+        <a href="/{{ request.environ.CKAN_LANG }}/glossary" title="{{ _('Glossar') }}">{{ _('Glossar') }}</a>
       </p>
     </div>
-    <div class="span6">
-      <p id="portal-language">
-        <a href="" title="{{ _('Deutsch') }}">{{ _('Deutsch') }}</a> | 
-        <a href="" title="{{ _('Französisch') }}">{{ _('Französisch') }}</a> | 
-        <a href="" title="{{ _('Italienisch') }}">{{ _('Italienisch') }}</a> | 
-        <a href="" title="{{ _('English') }}">{{ _('English') }}</a>
-      </p>
-    </div>
+
+    {% block footer_lang %}
+      {% snippet "snippets/language_selector.html" %}
+    {% endblock %}
   </div>
 
   {% block header_site_navigation %}
