@@ -32,9 +32,7 @@
     <div class="span6">
       <p>
         <a href="/?_locale={{ request.environ.CKAN_LANG }}" title="{{ _('Startseite') }}">{{ _('Startseite') }}</a> | 
-        <a href="/{{ request.environ.CKAN_LANG }}/index" title="{{ _('Übersicht') }}">{{ _('Übersicht') }}</a> | 
-        <a href="/{{ request.environ.CKAN_LANG }}/contact" title="{{ _('Kontakt') }}">{{ _('Kontakt') }}</a> | 
-        <a href="/{{ request.environ.CKAN_LANG }}/glossary" title="{{ _('Glossar') }}">{{ _('Glossar') }}</a>
+        <a href="#" title="{{ _('Kontakt') }}">{{ _('Kontakt') }}</a>
       </p>
     </div>
 
@@ -50,9 +48,9 @@
         {{ h.build_nav_main(
           ('search', _('Daten'))
         ) }}
-        <li><a href="/apps" title="{{ _('Anwendungen') }}">{{ _('Anwendungen') }}</a></li>
-        <li><a href="/faq" title="{{ _('FAQ') }}">{{ _('FAQ') }}</a></li>
-        <li><a href="/about" title="{{ _('Über das Portal') }}">{{ _('Über das Portal') }}</a></li>
+        <li><a href="/{{ request.environ.CKAN_LANG }}/apps" title="{{ _('Anwendungen') }}">{{ _('Anwendungen') }}</a></li>
+        <li><a href="#" title="{{ _('FAQ') }}">{{ _('FAQ') }}</a></li>
+        <li><a href="#" title="{{ _('Über das Portal') }}">{{ _('Über das Portal') }}</a></li>
         {% endblock %}
       </ul>
     </nav>
