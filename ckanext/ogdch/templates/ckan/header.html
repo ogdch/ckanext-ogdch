@@ -10,31 +10,28 @@
 
   <div class="row-fluid">
     <div class="span6 offset6" id="federal-authorities-bar">
-      <a href="http://www.admin.ch/?lang={{ request.environ.CKAN_LANG }}" title="{{ _('Bundesverwaltung admin.ch') }}">{{ _('Bundesverwaltung admin.ch') }}</a>
+      <a href="http://www.admin.ch/?lang={{ request.environ.CKAN_LANG }}" title="{{ _('header.national_council') }}">{{ _('header.national_council') }}</a>
     </div>
   </div>
 
   <div class="row-fluid">
-    {# The .header-image class hides the main text and uses image replacement for the title #}
     <hgroup class="span4 {{ g.header_class }}">
       {% block header_logo %}
-        <a class="logo" href="/?_locale={{ request.environ.CKAN_LANG }}"><img src="http://ogd.lo/bundles/ogdchcore/images/admin-logo.png" alt="{{ g.site_title }} Logo" title="{{ g.site_title }} Logo" /></a>
+        <a class="logo" href="/?_locale={{ request.environ.CKAN_LANG }}"><img src="http://ogd.lo/bundles/ogdchcore/images/admin-logo.png" alt="{{ _('header.title') }} Logo" title="{{ _('header.title') }} Logo" /></a>
       {% endblock %}
     </hgroup>
 
     <div class="span8" id="ogd-portal-description">
       <h2>www.opendata.admin.ch</h2>
-      <h3>{{ _('Offene Behördendaten der Schweiz') }}</h3>
+      <h3>{{ _('header.portal_subtitle') }}</h3>
     </div>
   </div>
 
   <div class="row-fluid" id="language-bar">
     <div class="span6">
       <p>
-        <a href="/?_locale={{ request.environ.CKAN_LANG }}" title="{{ _('Startseite') }}">{{ _('Startseite') }}</a> | 
-        <a href="/{{ request.environ.CKAN_LANG }}/index" title="{{ _('Übersicht') }}">{{ _('Übersicht') }}</a> | 
-        <a href="/{{ request.environ.CKAN_LANG }}/contact" title="{{ _('Kontakt') }}">{{ _('Kontakt') }}</a> | 
-        <a href="/{{ request.environ.CKAN_LANG }}/glossary" title="{{ _('Glossar') }}">{{ _('Glossar') }}</a>
+        <a href="/?_locale={{ request.environ.CKAN_LANG }}" title="{{ _('header.homepage_link') }}">{{ _('header.homepage_link') }}</a> | 
+        <a href="#" title="{{ _('header.contact_link') }}">{{ _('header.contact_link') }}</a>
       </p>
     </div>
 
@@ -48,11 +45,11 @@
       <ul class="nav nav-pills">
         {% block header_site_navigation_tabs %}
         {{ h.build_nav_main(
-          ('search', _('Daten'))
+          ('search', _('header.data_link'))
         ) }}
-        <li><a href="/apps" title="{{ _('Anwendungen') }}">{{ _('Anwendungen') }}</a></li>
-        <li><a href="/faq" title="{{ _('FAQ') }}">{{ _('FAQ') }}</a></li>
-        <li><a href="/about" title="{{ _('Über das Portal') }}">{{ _('Über das Portal') }}</a></li>
+        <li><a href="/{{ request.environ.CKAN_LANG }}/apps" title="{{ _('header.apps_link') }}">{{ _('header.apps_link') }}</a></li>
+        <li><a href="#" title="{{ _('header.faq_link') }}">{{ _('header.faq_link') }}</a></li>
+        <li><a href="#" title="{{ _('header.about_link') }}">{{ _('header.about_link') }}</a></li>
         {% endblock %}
       </ul>
     </nav>

@@ -2,8 +2,9 @@
   <div class="row-fluid">
     {% block footer_content %}
       <div class="span12">
-        <p>{{ _('Haben Sie Fragen zum OGD Portal? Melden Sie sich bei uns via E-Mail:') }} <a href="mailto:opendata@bar.admin.ch" title="opendata@bar.admin.ch">opendata@bar.admin.ch</a></p>
-        <p>{{ _('Bei Fragen zu den einzelnen Datensätzen, melden Sie sich bitte bei dem unter Autor definierten Bundesamt.') }}</p>
+        <p>{{ _('footer.do_you_have_general_questions') }} <a href="#" title="{{ _('footer.contact_form') }}">{{ _('footer.contact_form') }}</a></p>
+        <p>{{ _('footer.do_you_have_dataset_questions') }}</p>
+        <p><a href="#" title="{{ _('footer.legal_requirements') }}">{{ _('footer.legal_requirements') }}</p>
       </div>
     {% endblock %}
   </div>
