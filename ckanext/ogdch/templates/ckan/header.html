@@ -31,7 +31,7 @@
     <div class="span6">
       <p>
         <a href="/{{ request.environ.CKAN_LANG }}" title="{{ _('header.homepage_link') }}">{{ _('header.homepage_link') }}</a> | 
-        <a href="#" title="{{ _('header.contact_link') }}">{{ _('header.contact_link') }}</a>
+        <a href="/{{ request.environ.CKAN_LANG }}/contact" title="{{ _('header.contact_link') }}">{{ _('header.contact_link') }}</a>
       </p>
     </div>
 
@@ -48,8 +48,8 @@
           ('search', _('header.data_link'))
         ) }}
         <li><a href="/{{ request.environ.CKAN_LANG }}/apps" title="{{ _('header.apps_link') }}">{{ _('header.apps_link') }}</a></li>
-        <li><a href="#" title="{{ _('header.faq_link') }}">{{ _('header.faq_link') }}</a></li>
-        <li><a href="#" title="{{ _('header.about_link') }}">{{ _('header.about_link') }}</a></li>
+        <li><a href="/{{ request.environ.CKAN_LANG }}/faq" title="{{ _('header.faq_link') }}">{{ _('header.faq_link') }}</a></li>
+        <li><a href="/{{ request.environ.CKAN_LANG }}/about" title="{{ _('header.about_link') }}">{{ _('header.about_link') }}</a></li>
         {% endblock %}
       </ul>
     </nav>
