@@ -15,14 +15,14 @@
         </span>
       {% endif %}
       <h1>
-        {{ pkg.title or pkg.name }}
+        <span class="ogd_title">{{ pkg.title or pkg.name }}</span>
         {% if pkg.state.startswith('draft') %}
           [{{ _('Draft') }}]
         {% endif %}
       </h1>
       {% if c.pkg_notes_formatted %}
         <div class="notes embedded-content">
-          {{ _('dataset.in_the_category') }}: 
+          <span class="ogd_title">{{ _('dataset.in_the_category') }}:</span>
 
           {% if pkg.groups %}
             <a href="{{ h.url_for(controller='group', action='read', id=pkg.groups[0].name) }}">
@@ -37,8 +37,6 @@
           {% endblock %}
         </div>
       {% endif %}
-      {# FIXME why is this here? seems wrong #}
-      <span class="insert-comment-thread"></span>
     </section>
   {% endblock %}
 
