@@ -6128,3 +6128,11 @@ msgstr "Bei Fragen zu einzelnen Datensätzen, wenden Sie sich bitte direkt bei d
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.legal_requirements"
 msgstr "Rechtliche Grundlagen"
+
+#: ckanext-ogdch/templates/ckan/package/read.html
+msgid "dataset.in_the_category"
+msgstr "In der Kategorie"
+
+#: ckanext-ogdch/templates/ckan/package/read.html
+msgid "dataset.tags"
+msgstr "Tags"
