@@ -31,6 +31,10 @@
           {% endif %}
 
           {{ c.pkg_notes_formatted }}
+
+          {% block package_tags %}
+            {% snippet "package/snippets/tags.html", tags=pkg.tags %}
+          {% endblock %}
         </div>
       {% endif %}
       {# FIXME why is this here? seems wrong #}
@@ -40,10 +44,6 @@
 
   {% block package_resources %}
     {% snippet "package/snippets/resources_list.html", pkg=pkg, resources=pkg.resources %}
-  {% endblock %}
-
-  {% block package_tags %}
-    {% snippet "package/snippets/tags.html", tags=pkg.tags %}
   {% endblock %}
 
   {% block package_additional_info %}

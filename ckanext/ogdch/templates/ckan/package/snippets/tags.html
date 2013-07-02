@@ -1,0 +1,12 @@
+{% if tags %}
+    <div class="ogdch_tags">
+      <span>{{ _('dataset.tags') }}:</span>
+      <ul>
+        {% for tag in tags %}
+          <li>
+            <a href="ogdch_tag" href="{% url_for controller='package', action='search', tags=tag.name %}">{{ h.truncate(tag.display_name, 22) }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+{% endif %}
