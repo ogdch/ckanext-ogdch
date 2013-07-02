@@ -22,6 +22,14 @@
       </h1>
       {% if c.pkg_notes_formatted %}
         <div class="notes embedded-content">
+          {{ _('dataset.in_the_category') }}: 
+
+          {% if pkg.groups %}
+            <a href="{{ h.url_for(controller='group', action='read', id=pkg.groups[0].name) }}">
+              {{ pkg.groups[0].title or pkg.groups[0].name }}
+            </a>
+          {% endif %}
+
           {{ c.pkg_notes_formatted }}
         </div>
       {% endif %}
