@@ -61,9 +61,12 @@
             #}
             {% block pre_primary %}
             {% endblock %}
-            
+
             {% block primary %}
-              <div class="primary">
+
+              {% set controller = request.environ['pylons.routes_dict']['controller'] %}
+              {% set action = request.environ['pylons.routes_dict']['action'] %}
+              <div class="primary {{ controller }} {{ action }}">
                 {#
                 The primary_content block can be used to add content to the page.
                 This is the main block that is likely to be used within a template.
@@ -80,7 +83,10 @@
             {% endblock %}
 
             {% block secondary %}
-              <aside class="secondary">
+              {% set controller = request.environ['pylons.routes_dict']['controller'] %}
+              {% set action = request.environ['pylons.routes_dict']['action'] %}
+
+              <aside class="secondary {{ controller }} {{ action }}">
                 {#
                 The secondary_content block can be used to add content to the
                 sidebar of the page. This is the main block that is likely to be
