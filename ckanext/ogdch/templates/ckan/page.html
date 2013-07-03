@@ -62,6 +62,12 @@
             {% block pre_primary %}
             {% endblock %}
 
+            {% block zero %}
+              <div class="zero">
+                {% block zero_content %}{% endblock %}
+              </div>
+            {% endblock %}
+
             {% block primary %}
 
               {% set controller = request.environ['pylons.routes_dict']['controller'] %}
