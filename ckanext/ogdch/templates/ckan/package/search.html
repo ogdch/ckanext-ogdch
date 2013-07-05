@@ -32,9 +32,7 @@
         {% snippet 'snippets/search_result_text.html', query=c.q, count=c.page.item_count, type='dataset' %}
       </h3>
     {% elif request.params and c.page.item_count == 0 %}
-      {% trans %}
-        <p class="extra">Please try another search.</p>
-      {% endtrans %}
+      <p class="extra">{{ _('dataset.no_dataset_found_message_part_one') }}<a href="/{{ request.environ.CKAN_LANG }}/contact/app" title="{{ _('dataset.no_dataset_found_message_word_contact') }}">{{ _('dataset.no_dataset_found_message_word_contact') }}</a>{{ _('dataset.no_dataset_found_message_part_two') }}</p>
     {% endif %}
   </div>
 </div>
@@ -68,19 +66,29 @@
 {% block primary_content %}
   {% if c.page.item_count != 0 %}
     <section class="module">
-      <div class="module-content">
-        <form id="dataset-search-filter" class="dataset-search clearfix" method="get" data-module="select-switch">
-          {{ h.snippet('snippets/sort_by.html', sort=c.sort_by_selected) }}
+      <div class="row-fluid module-header">
+        <div class="span6">
+          {% if c.page.item_count == 1 %}
+            <span>{{ _('dataset.result_title_single') }}</span>
+          {% else %}
+            <span>{{ _('dataset.result_title_many') }}</span>
+          {% endif %}
+        </div>
+        <div class="span6">
+          <form id="dataset-search-filter" class="dataset-search clearfix" method="get" data-module="select-switch">
+            {{ h.snippet('snippets/sort_by.html', sort=c.sort_by_selected) }}
 
-          {% if c.fields -%}
-            <span>
-              {{ form.hidden_from_list(fields=c.fields) }}
-            </span>
-          {%- endif %}
+            {% if c.fields -%}
+              <span>
+                {{ form.hidden_from_list(fields=c.fields) }}
+              </span>
+            {%- endif %}
 
-          <div id="dataset-search-ext">{% block dataset_search_ext %}{% endblock %}</div>
-        </form>
-        
+            <div id="dataset-search-ext">{% block dataset_search_ext %}{% endblock %}</div>
+          </form>
+        </div>
+      </div>
+      <div class="module-content">        
         {% if c.query_error %}
           {% trans %}
             <p><strong>There was an error while searching.</strong> Please try again.</p>
