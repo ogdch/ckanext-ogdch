@@ -6075,7 +6075,7 @@ msgstr "Wähle Bereich"
 
 #: ckanext-ogdch/not_currently_used
 msgid "general.title"
-msgstr "www.opendata.admin.ch"
+msgstr "opendata.admin.ch"
 
 #: ckanext-ogdch/templates/ckan/header.html
 msgid "header.national_council"
@@ -6083,11 +6083,11 @@ msgstr "Bundesverwaltung admin.ch"
 
 #: ckanext-ogdch/templates/ckan/header.html
 msgid "header.title"
-msgstr "www.opendata.admin.ch"
+msgstr "opendata.admin.ch"
 
 #: ckanext-ogdch/templates/ckan/header.html
 msgid "header.portal_subtitle"
-msgstr "Frei verfügbare Behördendaten der Schweiz"
+msgstr "Offene Behördendaten der Schweiz"
 
 #: ckanext-ogdch/templates/ckan/header.html
 msgid "header.homepage_link"
@@ -6114,16 +6114,24 @@ msgid "header.about_link"
 msgstr "Über das Portal"
 
 #: ckanext-ogdch/templates/ckan/footer.html
-msgid "footer.do_you_have_general_questions"
-msgstr "Haben Sie Fragen zum OGD-Portal?"
+msgid "footer.do_you_have_general_questions_part_one"
+msgstr "Haben Sie Fragen zum OGD-Pilotportal? Antworten auf häufige Fragen finden Sie unter"
 
 #: ckanext-ogdch/templates/ckan/footer.html
-msgid "footer.contact_form"
-msgstr "Kontaktieren Sie uns."
+msgid "footer.do_you_have_general_questions_part_two"
+msgstr "oder"
 
 #: ckanext-ogdch/templates/ckan/footer.html
-msgid "footer.do_you_have_dataset_questions"
-msgstr "Bei Fragen zu einzelnen Datensätzen, wenden Sie sich bitte direkt bei dem unter Autor genannten Kontakt."
+msgid "footer.contact_us"
+msgstr "kontaktieren Sie uns"
+
+#: ckanext-ogdch/templates/ckan/footer.html
+msgid "footer.looking_for_a_single_dataset"
+msgstr "Bei Fragen zu einem bestimmten Datensatz, wenden Sie sich bitte direkt an den beim Datensatz genannten Autor. Falls Sie einen Datensatz nicht gefunden haben können Sie uns dies gerne"
+
+#: ckanext-ogdch/templates/ckan/footer.html
+msgid "footer.looking_for_a_single_dataset_link"
+msgstr "mitteilen"
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.legal_requirements"
