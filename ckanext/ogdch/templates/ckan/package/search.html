@@ -67,15 +67,14 @@
   {% if c.page.item_count != 0 %}
     <section class="module">
       <div class="row-fluid module-header">
-        <div class="span6">
+        <form id="dataset-search-filter" class="dataset-search clearfix" method="get" data-module="select-switch">
+        <div class="span12">
+        <h2 class="module-heading">
           {% if c.page.item_count == 1 %}
-            <span>{{ _('dataset.result_title_single') }}</span>
+            <span class="module-title">{{ _('dataset.result_title_single') }}</span>
           {% else %}
-            <span>{{ _('dataset.result_title_many') }}</span>
+            <span class="module-title">{{ _('dataset.result_title_many') }}</span>
           {% endif %}
-        </div>
-        <div class="span6">
-          <form id="dataset-search-filter" class="dataset-search clearfix" method="get" data-module="select-switch">
             {{ h.snippet('snippets/sort_by.html', sort=c.sort_by_selected) }}
 
             {% if c.fields -%}
@@ -85,8 +84,9 @@
             {%- endif %}
 
             <div id="dataset-search-ext">{% block dataset_search_ext %}{% endblock %}</div>
-          </form>
+        </h2>    
         </div>
+        </form>
       </div>
       <div class="module-content datasets">        
         {% if c.query_error %}
