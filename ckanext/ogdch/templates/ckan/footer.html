@@ -6,7 +6,7 @@
 
         <p>{{ _('footer.looking_for_a_single_dataset') }} <a href="/{{ request.environ.CKAN_LANG }}/contact/dataset" title="{{ _('footer.looking_for_a_single_dataset_link') }}">{{ _('footer.looking_for_a_single_dataset_link') }}</a>.</p>
 
-        <p class="legal_requirements"><a href="#" title="{{ _('footer.legal_requirements') }}">{{ _('footer.legal_requirements') }}</p>
+        <p class="legal_requirements"><a href="/{{ request.environ.CKAN_LANG }}/disclaimer" title="{{ _('footer.legal_requirements') }}">{{ _('footer.legal_requirements') }}</p>
       </div>
     {% endblock %}
   </div>
