@@ -76,13 +76,21 @@
         </div>
         <div class="box-container">
           {% if pkg_dict.license_id %}
-            {% if 'license_url' in pkg_dict %}
-              <a href="{{ pkg_dict.license_url }}" rel="dc:rights">
-                <span class='license-title'>{{ pkg_dict.license_title }}</span>
-              </a>
-            {% else %}
-              <span property="dc:rights">{{ pkg_dict.license_title }}</span>
-            {% endif %}
+
+            {% for extra in pkg_dict.extras %}
+              {% if extra.key == 'license_url' %}
+                <a href="{{ extra.value }}">
+              {% endif %}
+            {% endfor %}
+
+            <span class="license=title" property="dc:rights">{{ pkg_dict.license_title }}</span>
+
+            {% for extra in pkg_dict.extras %}
+              {% if extra.key == 'license_url' %}
+                </a>
+              {% endif %}
+            {% endfor %}
+
             {% if not text_only %}
               {% if pkg_dict.isopen %}
               <div>
@@ -90,7 +98,7 @@
                   <img class="open-data" src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="[Open Data]" />
                 </a>
               </div>
-              {% endif %}        
+              {% endif %}
             {% endif %}
           {% elif text_only %}
             {{ _('No License Provided') }}
