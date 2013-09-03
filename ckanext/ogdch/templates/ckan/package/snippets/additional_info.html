@@ -76,20 +76,15 @@
         </div>
         <div class="box-container">
           {% if pkg_dict.license_id %}
-
-            {% for extra in pkg_dict.extras %}
-              {% if extra.key == 'license_url' %}
-                <a href="{{ extra.value }}">
-              {% endif %}
-            {% endfor %}
-
-            <span class="license=title" property="dc:rights">{{ pkg_dict.license_title }}</span>
-
-            {% for extra in pkg_dict.extras %}
-              {% if extra.key == 'license_url' %}
-                </a>
-              {% endif %}
-            {% endfor %}
+            {% if h.get_license_url(pkg_dict) %}
+              <a href="{{ h.get_license_url(pkg_dict) }}" property="dc:rights">
+                <span class="license-title">{{ pkg_dict.license_title }}</span>
+              </a>
+            {% else %}
+              <span class="license-title" property="dc:rights">
+                {{ pkg_dict.license_title }}
+              </span>
+            {% endif %}
 
             {% if not text_only %}
               {% if pkg_dict.isopen %}
