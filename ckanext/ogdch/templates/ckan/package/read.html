@@ -25,7 +25,7 @@
           <span class="ogd_title">{{ _('dataset.in_the_category') }}:</span>
 
           {% if pkg.groups %}
-            <a href="{{ h.url_for(controller='group', action='read', id=pkg.groups[0].name) }}">
+            <a href="{{ h.url_for(controller='package', action='search', groups=pkg.groups[0].name) }}">
               {{ pkg.groups[0].title or pkg.groups[0].name }}
             </a>
           {% endif %}
