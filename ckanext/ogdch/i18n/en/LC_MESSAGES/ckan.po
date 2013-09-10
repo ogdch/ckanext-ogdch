@@ -270,7 +270,7 @@ msgstr ""
 #: ckan/controllers/group.py:743
 #, python-format
 msgid "Unauthorized to read group %s"
-msgstr "Unauthorized to read categories %s"
+msgstr "Unauthorized to read category %s"
 
 #: ckan/controllers/group.py:182
 msgid "Cannot render description"
@@ -371,7 +371,7 @@ msgstr ""
 
 #: ckan/controllers/group.py:609
 msgid "CKAN Group Revision History"
-msgstr "CKAN Category Revision History"
+msgstr "CKAN Group Revision History"
 
 #: ckan/controllers/group.py:612
 msgid "Recent changes to CKAN Category: "
@@ -2318,7 +2318,7 @@ msgstr ""
 #: ckan/templates/group/index.html:3 ckan/templates_legacy/group/index.html:6
 #: ckan/templates_legacy/group/index.html:7
 msgid "Groups of Datasets"
-msgstr "Category of Datasets"
+msgstr "Categories of Datasets"
 
 #: ckan/templates/group/index.html:11
 #: ckan/templates/package/snippets/package_metadata_fields.html:46
@@ -6031,17 +6031,63 @@ msgstr ""
 msgid "Choose area"
 msgstr ""
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#: ckanext-ogdch/not_currently_used
+msgid "general.title"
+msgstr "opendata.admin.ch"
+
 #: ckanext-ogdch/ckanext/ogdch/templates/ckan/header.html
 msgid "header.national_council"
 msgstr "Federal Administration admin.ch"
 
-#: ckanext-ogdch/ckanext/ogdch/templates/ckan/header.html
+#: ckanext-ogdch/templates/ckan/header.html
 msgid "header.title"
-msgstr "Open Government Data Portal Switzerland"
+msgstr "opendata.admin.ch"
 
 #: ckanext-ogdch/ckanext/ogdch/templates/ckan/header.html
 msgid "header.portal_subtitle"
-msgstr "Freely available Swiss Government Data"
+msgstr "Swiss open government data pilot portal"
 
 #: ckanext-ogdch/ckanext/ogdch/templates/ckan/header.html
 msgid "header.homepage_link"
@@ -6069,16 +6115,52 @@ msgstr "About the portal"
 
 #: ckanext-ogdch/ckanext/ogdch/templates/ckan/footer.html
 msgid "footer.do_you_have_general_questions"
-msgstr "In case you have any questions regarding the OGD-Portal contact us:"
+msgstr "Do you have questions about the open government data pilot portal? Answers to frequently asked questions can be found under: "
 
-#: ckanext-ogdch/ckanext/ogdch/templates/ckan/footer.html
-msgid "footer.contact_form"
-msgstr "Contact Form"
+#: ckanext-ogdch/templates/ckan/footer.html
+msgid "footer.do_you_have_general_questions_part_two"
+msgstr "; alternatively, please feel free to "
 
-#: ckanext-ogdch/ckanext/ogdch/templates/ckan/footer.html
-msgid "footer.do_you_have_dataset_questions"
-msgstr "For questions regarding individual datasets, please get in touch with the department mentionend in the Author field."
+#: ckanext-ogdch/templates/ckan/footer.html
+msgid "footer.contact_us"
+msgstr "contact us"
+
+#: ckanext-ogdch/templates/ckan/footer.html
+msgid "footer.looking_for_a_single_dataset"
+msgstr "If you have questions regarding a particular data set, please contact the author indicated in the data set. If you have been unable to find a data set, please"
+
+#: ckanext-ogdch/templates/ckan/footer.html
+msgid "footer.looking_for_a_single_dataset_link"
+msgstr "let us know"
 
 #: ckanext-ogdch/ckanext/ogdch/templates/ckan/footer.html
 msgid "footer.legal_requirements"
-msgstr "Legal framework"
+msgstr "Terms of Use"
+
+#: ckanext-ogdch/templates/ckan/package/read.html
+msgid "dataset.in_the_category"
+msgstr "In the category"
+
+#: ckanext-ogdch/templates/ckan/package/read.html
+msgid "dataset.tags"
+msgstr "Tags"
+
+#: ckanext-ogdch/templates/ckan/package/search.html
+msgid "dataset.no_dataset_found_message_part_one"
+msgstr "Unfortunately, we could not find anything suitable. "
+
+#: ckanext-ogdch/templates/ckan/package/search.html
+msgid "dataset.no_dataset_found_message_part_two"
+msgstr "what data set you are looking for, so that we can try to close this gap."
+
+#: ckanext-ogdch/templates/ckan/package/search.html
+msgid "dataset.no_dataset_found_message_word_contact"
+msgstr "Let us know"
+
+#: ckanext-ogdch/templates/ckan/package/search.html
+msgid "dataset.result_title_single"
+msgstr "Result"
+
+#: ckanext-ogdch/templates/ckan/package/search.html
+msgid "dataset.result_title_many"
+msgstr "Results"

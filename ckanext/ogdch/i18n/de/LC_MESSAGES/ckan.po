@@ -271,7 +271,7 @@ msgstr "\"Seiten\" Wert muss eine positive Zahl sein"
 #: ckan/controllers/group.py:743
 #, python-format
 msgid "Unauthorized to read group %s"
-msgstr "Keine Berechtigung die Kategorie %s anzuzeigen"
+msgstr "Keine Berechtigung, die Kategorie %s anzuzeigen"
 
 #: ckan/controllers/group.py:182
 msgid "Cannot render description"
@@ -307,7 +307,7 @@ msgstr "Kategorien"
 #: ckan/templates_legacy/tag/index.html:9
 #: ckanext/organizations/templates_legacy/organizations/package_form.html:130
 msgid "Tags"
-msgstr "Tags"
+msgstr "Schlagworte"
 
 #: ckan/controllers/group.py:254 ckan/controllers/home.py:68
 #: ckan/controllers/package.py:240 ckan/lib/helpers.py:529
@@ -339,7 +339,7 @@ msgstr "Benutzer %r hat keine Berechtigung die Autorisierung von %s zu bearbeite
 #: ckan/controllers/group.py:512 ckan/controllers/group.py:566
 #, python-format
 msgid "Unauthorized to delete group %s"
-msgstr "Keine Berechtigung die Kategorie %s zu löschen"
+msgstr "Keine Berechtigung, die Kategorie %s zu löschen"
 
 #: ckan/controllers/group.py:492
 msgid "Organization has been deleted."
@@ -352,12 +352,12 @@ msgstr "Kategorie wurde gelöscht."
 #: ckan/controllers/group.py:539
 #, python-format
 msgid "Unauthorized to add member to group %s"
-msgstr "Keine Berichtigung Mitglied zur Kategorie %s hinzuzufügen"
+msgstr "Keine Berichtigung, Mitglied zur Kategorie %s hinzuzufügen"
 
 #: ckan/controllers/group.py:554
 #, python-format
 msgid "Unauthorized to delete group %s members"
-msgstr "Keine Berechtigung Mitglieder der Kategorie %s zu löschen"
+msgstr "Keine Berechtigung, Mitglieder der Kategorie %s zu löschen"
 
 #: ckan/controllers/group.py:560
 msgid "Group member has been deleted."
@@ -386,7 +386,7 @@ msgstr "Logeintrag:"
 
 #: ckan/controllers/group.py:662
 msgid "Unauthorized to read group {group_id}"
-msgstr "Keine Berechtigung die Kategorie {group_id} anzuzeigen"
+msgstr "Keine Berechtigung, die Kategorie {group_id} anzuzeigen"
 
 #: ckan/controllers/group.py:682 ckan/controllers/package.py:1238
 #: ckan/controllers/user.py:594
@@ -659,7 +659,7 @@ msgstr "Andere"
 
 #: ckan/controllers/tag.py:66
 msgid "Tag not found"
-msgstr "Tag nicht gefunden"
+msgstr "Schlagwort nicht gefunden"
 
 #: ckan/controllers/user.py:158
 msgid "Unauthorized to create a user"
@@ -780,7 +780,7 @@ msgstr "Fehler: Konnte \"Über\"-Text nicht parsen"
 
 #: ckan/lib/activity_streams.py:64
 msgid "{actor} added the tag {tag} to the dataset {dataset}"
-msgstr "{actor} hat den Tag {tag} zum Datensatz {dataset} hinzugefügt"
+msgstr "{actor} hat das Schlagwort {tag} zum Datensatz {dataset} hinzugefügt"
 
 #: ckan/lib/activity_streams.py:67
 msgid "{actor} updated the group {group}"
@@ -852,7 +852,7 @@ msgstr "{actor} hat sich registriert"
 
 #: ckan/lib/activity_streams.py:118
 msgid "{actor} removed the tag {tag} from the dataset {dataset}"
-msgstr "{actor} hat das Tag {tag} vom Datensatz {dataset} entfernt"
+msgstr "{actor} hat das Schlagwort {tag} vom Datensatz {dataset} entfernt"
 
 #: ckan/lib/activity_streams.py:121
 msgid "{actor} deleted the related item {related_item}"
@@ -1150,7 +1150,7 @@ msgstr "Kein gültiger API-Schlüssel angegeben."
 #: ckan/logic/converters.py:59 ckan/logic/converters.py:74
 #, python-format
 msgid "Tag vocabulary \"%s\" does not exist"
-msgstr "Tag-Vokabular \"%s\" existiert nicht"
+msgstr "Schlagwort-Vokabular \"%s\" existiert nicht"
 
 #: ckan/logic/converters.py:106 ckan/logic/validators.py:137
 #: ckan/logic/validators.py:154 ckan/logic/validators.py:588
@@ -1263,22 +1263,22 @@ msgstr "Kategorienname exisitiert bereits in der Datenbank"
 #: ckan/logic/validators.py:338
 #, python-format
 msgid "Tag \"%s\" length is less than minimum %s"
-msgstr "Die Länge des Tag \"%s\" ist kürzer als das Minimum von %s"
+msgstr "Die Länge des Schlagworts \"%s\" ist kürzer als das Minimum von %s"
 
 #: ckan/logic/validators.py:342
 #, python-format
 msgid "Tag \"%s\" length is more than maximum %i"
-msgstr "Tag \"%s\" ist länger als maximal %i Zeichen"
+msgstr "Schlagwort \"%s\" ist länger als maximal %i Zeichen"
 
 #: ckan/logic/validators.py:350
 #, python-format
 msgid "Tag \"%s\" must be alphanumeric characters or symbols: -_."
-msgstr "Tag \"%s\" muss aus alphnummerischen Zeichen oder diesen Symbolen bestehen: -_. "
+msgstr "Schlagwort \"%s\" muss aus alphanummerischen Zeichen oder diesen Symbolen bestehen: -_. "
 
 #: ckan/logic/validators.py:358
 #, python-format
 msgid "Tag \"%s\" must not be uppercase"
-msgstr "Schlagwort \"%s\" darf keine Buchstaben in Großschrift enthalten"
+msgstr "Schlagwort \"%s\" darf keine Buchstaben in Grossschrift enthalten"
 
 #: ckan/logic/validators.py:453
 msgid "That login name is not available."
@@ -1313,21 +1313,21 @@ msgstr "Der Schlüsselwert kann nicht von %s auf %s geändert werden. Dieser Sch
 
 #: ckan/logic/validators.py:524
 msgid "Tag vocabulary was not found."
-msgstr "Tag-Vokabular wurde nicht gefunden."
+msgstr "Schlagwort-Vokabular wurde nicht gefunden."
 
 #: ckan/logic/validators.py:537
 #, python-format
 msgid "Tag %s does not belong to vocabulary %s"
-msgstr "Tag %s gehört nicht zu Vokabular %s."
+msgstr "Schlagwort %s gehört nicht zu Vokabular %s."
 
 #: ckan/logic/validators.py:543
 msgid "No tag name"
-msgstr "Kein Tag-Name"
+msgstr "Kein Schlagwort-Name"
 
 #: ckan/logic/validators.py:556
 #, python-format
 msgid "Tag %s already belongs to vocabulary %s"
-msgstr "Tag %s gehört bereits zu Vokabular %s"
+msgstr "Schlagwort %s gehört bereits zum Vokabular %s"
 
 #: ckan/logic/validators.py:579
 msgid "Please provide a valid URL"
@@ -1392,7 +1392,7 @@ msgstr "Sie müssen angemeldet sein um einem Datensatz folgen zu können."
 
 #: ckan/logic/action/create.py:1153 ckan/logic/action/create.py:1161
 msgid "You must be logged in to follow a group."
-msgstr "Sie müssen angemeldet sein um einer Kategorie folgen zu können."
+msgstr "Sie müssen angemeldet sein, um einer Kategorie folgen zu können."
 
 #: ckan/logic/action/delete.py:40
 #, python-format
@@ -1423,7 +1423,7 @@ msgstr "Vokabular \"%s\" konnte nicht gefunden werden"
 #: ckan/logic/action/delete.py:334
 #, python-format
 msgid "Could not find tag \"%s\""
-msgstr "Tag \"%s\" konnte nicht gefunden werden"
+msgstr "Schlagwort \"%s\" konnte nicht gefunden werden"
 
 #: ckan/logic/action/delete.py:360 ckan/logic/action/delete.py:364
 msgid "You must be logged in to unfollow something."
@@ -1489,7 +1489,7 @@ msgstr "Benutzer %s hat keine Berechtigung Pakete zu bearbeiten"
 #: ckan/logic/auth/create.py:21 ckan/logic/auth/update.py:33
 #, python-format
 msgid "User %s not authorized to edit these groups"
-msgstr "Benutzer %s hat keine Berechtigung diese Kategorie zu bearbeiten"
+msgstr "Benutzer %s hat keine Berechtigung, diese Kategorie zu bearbeiten"
 
 #: ckan/logic/auth/create.py:43
 msgid "You must be a sysadmin to create a featured related item"
@@ -1507,7 +1507,7 @@ msgstr "Benutzer %s hat keine Berechtigung diese Pakete zu bearbeiten"
 #: ckan/logic/auth/create.py:82
 #, python-format
 msgid "User %s not authorized to create groups"
-msgstr "Benutzer %s hat keine Berechtigung Kategorien zu bearbeiten"
+msgstr "Benutzer %s hat keine Berechtigung, Kategorien zu bearbeiten"
 
 #: ckan/logic/auth/create.py:92
 #, python-format
@@ -1563,12 +1563,12 @@ msgstr "Benutzer %s hat keine Berechtigung die Beziehung %s zu löschen"
 #: ckan/logic/auth/delete.py:79
 #, python-format
 msgid "User %s not authorized to delete groups"
-msgstr "Benutzer %s hat keine Berechtigung Kategorien zu löschen"
+msgstr "Benutzer %s hat keine Berechtigung, Kategorien zu löschen"
 
 #: ckan/logic/auth/delete.py:83
 #, python-format
 msgid "User %s not authorized to delete group %s"
-msgstr "Benutzer %s hat keine Berechtigung die Kategorie %s zu löschen"
+msgstr "Benutzer %s hat keine Berechtigung, die Kategorie %s zu löschen"
 
 #: ckan/logic/auth/delete.py:92
 #, python-format
@@ -1627,7 +1627,7 @@ msgstr "Benutzer %s hat keine Berechtigung den Zustand des Pakets %s zu bearbeit
 #: ckan/logic/auth/update.py:79
 #, python-format
 msgid "User %s not authorized to edit group %s"
-msgstr "Benutzer %s hat keine Berechtigung die Kategorie %s zu bearbeiten"
+msgstr "Benutzer %s hat keine Berechtigung, die Kategorie %s zu bearbeiten"
 
 #: ckan/logic/auth/update.py:89
 #, python-format
@@ -1645,17 +1645,17 @@ msgstr "Du musst System-Administrator sein, um das hervorgehobene Feld eines zug
 #: ckan/logic/auth/update.py:120
 #, python-format
 msgid "User %s not authorized to change state of group %s"
-msgstr "Benutzer %s hat keine Berechtigung den Zustand der Kategorie %s zu bearbeiten"
+msgstr "Benutzer %s hat keine Berechtigung, den Zustand der Kategorie %s zu bearbeiten"
 
 #: ckan/logic/auth/update.py:129
 #, python-format
 msgid "User %s not authorized to edit permissions of group %s"
-msgstr "Benutzer %s hat keine Berechtigung die Berechtigungen an der Kategorie %s zu bearbeiten"
+msgstr "Benutzer %s hat keine Berechtigung, die Berechtigungen an der Kategorie %s zu bearbeiten"
 
 #: ckan/logic/auth/update.py:141
 #, python-format
 msgid "User %s not authorized to edit user %s"
-msgstr "Benutzer %s hat keine Berechtigung den Benutzer %s zu bearbeiten"
+msgstr "Benutzer %s hat keine Berechtigung, den Benutzer %s zu bearbeiten"
 
 #: ckan/logic/auth/update.py:149
 #, python-format
@@ -2363,7 +2363,7 @@ msgid ""
 "to make it easier for users to browse datasets by theme. Datasets can be "
 "part of a group, but do not belong to the group for editing or authorisation"
 " purposes.</p> "
-msgstr " <p>Mit Kategorien kannst du Datensätze zu Communities (z.B. Bürgerrechtsdaten) oder Themen (z.B. Nahverkehr, Gesundheit, Umwelt) gruppieren, um es Nutzern einfacher zu machen Datensätze zu finden. Datensätze können Teil einer Kategorie sein, aber sie gehören nicht zu der Kategorie als Teil von Berechtigungen.</p> "
+msgstr " <p>Mit Kategorien kannst du Datensätze zu Communities (z.B. Bürgerrechtsdaten) oder Themen (z.B. Nahverkehr, Gesundheit, Umwelt) gruppieren, um es Nutzern einfacher zu machen, Datensätze zu finden. Datensätze können Teil einer Kategorie sein, aber sie gehören nicht zu der Kategorie als Teil von Berechtigungen.</p> "
 
 #: ckan/templates/group/member_new.html:13
 #: ckan/templates/group/members.html:19
@@ -2792,7 +2792,7 @@ msgstr "Was sind Datensätze?"
 msgid ""
 " Datasets are simply used to group related pieces of data. These can then be"
 " found under a single url with a description and licensing information. "
-msgstr "Datensätze werden genutzt um unterschiedliche Datenteile zu gruppieren. Diese können dann unter einer URL mit einer Beschreibung und Lizenzinformationen gefunden werden."
+msgstr "Datensätze werden genutzt, um unterschiedliche Datenteile zu gruppieren. Diese können dann unter einer URL mit einer Beschreibung und Lizenzinformationen gefunden werden."
 
 #: ckan/templates/package/confirm_delete.html:10
 msgid "Are you sure you want to delete dataset - {name}?"
@@ -3595,7 +3595,7 @@ msgstr[1] "{number} Kategorien gefunden für \"{query}\""
 
 #: ckan/templates/snippets/search_result_text.html:22
 msgid "Sorry no groups found for \"{query}\""
-msgstr "Sorry, keine Kategorien gefunden für \"{query}\""
+msgstr "Leider keine Kategorien gefunden für \"{query}\""
 
 #: ckan/templates/snippets/search_result_text.html:23
 msgid "{number} group found"
@@ -3605,7 +3605,7 @@ msgstr[1] "{number} Kategorien gefunden"
 
 #: ckan/templates/snippets/search_result_text.html:24
 msgid "Sorry no groups found"
-msgstr "Sorry, keine Kategorien gefunden"
+msgstr "Leider keine Kategorien gefunden"
 
 #: ckan/templates/snippets/search_result_text.html:27
 msgid "{number} organization found for \"{query}\""
@@ -4421,7 +4421,7 @@ msgid ""
 "when you want to restrict users from editing a collection. A [1:group] can "
 "be set-up to specify which users have permission to add or remove datasets "
 "from it."
-msgstr "Während Tags gut geeignet sind um Datensätze zu gruppieren gibt es auch Gelegenheiten zu denen Sie eine Sammlung beschränken wollen. Eine [1:Kategorie] kann festlegen, welche Benutzer Datensätze hinzufügen oder entfernen können. "
+msgstr "Während Schlagworte gut geeignet sind, um Datensätze zu gruppieren, gibt es auch den Fall, dass Sie die Bearbeitung einer Sammlung von Datensätzen einschränken möchten. Eine [1:Kategorie] kann festlegen, welche Benutzer Datensätze hinzufügen oder entfernen können. "
 
 #: ckan/templates_legacy/group/layout.html:13
 #: ckan/templates_legacy/package/layout.html:38
@@ -4439,11 +4439,11 @@ msgstr "Bestehender Datensatz..."
 
 #: ckan/templates_legacy/group/layout.html:29
 msgid "List Groups"
-msgstr "Kategorien Liste"
+msgstr "Kategorienliste"
 
 #: ckan/templates_legacy/group/layout.html:35
 msgid "Login to Add a Group"
-msgstr "Einloggen um eine Kategorie hinzuzufügen"
+msgstr "Einloggen, um eine Kategorie hinzuzufügen"
 
 #: ckan/templates_legacy/group/new.html:5
 #: ckan/templates_legacy/group/new.html:6
@@ -5336,7 +5336,7 @@ msgstr "Änderungen"
 
 #: ckan/templates_legacy/revision/read.html:54
 msgid "Datasets' Tags"
-msgstr "Tags des Datensatzes"
+msgstr "Schlagworte des Datensatzes"
 
 #: ckan/templates_legacy/revision/read.html:57
 msgid "Dataset -"
@@ -5346,7 +5346,7 @@ msgstr "Datensatz - "
 msgid ""
 ",\n"
 "      Tag -"
-msgstr ",\n      Tag -"
+msgstr ",\n      Schlagwort -"
 
 #: ckan/templates_legacy/snippets/data-viewer-embed-dialog.html:19
 msgid "Embed this view"
@@ -5405,7 +5405,7 @@ msgstr "Suche zurücksetzen"
 
 #: ckan/templates_legacy/tag/index.html:34
 msgid "and see all tags."
-msgstr "alle Tags ansehen."
+msgstr "alle Schlagworte ansehen."
 
 #: ckan/templates_legacy/tag/read.html:6
 msgid "- Tags"
@@ -5413,7 +5413,7 @@ msgstr "- Schlagworte"
 
 #: ckan/templates_legacy/tag/read.html:7
 msgid "Tag:"
-msgstr "Tag:"
+msgstr "Schlagwort:"
 
 #: ckan/templates_legacy/tag/read.html:10
 #, python-format
@@ -6009,7 +6009,7 @@ msgstr "Keine bearbeiteten Datensätze"
 #: ckanext/stats/templates/ckanext/stats/index.html:182
 #: ckanext/stats/templates_legacy/ckanext/stats/index.html:80
 msgid "Largest Groups"
-msgstr "Größte Kategorie"
+msgstr "Grösste Kategorien"
 
 #: ckanext/stats/templates/ckanext/stats/index.html:127
 msgid "No groups"
@@ -6019,7 +6019,7 @@ msgstr "Keine Kategorien"
 #: ckanext/stats/templates/ckanext/stats/index.html:183
 #: ckanext/stats/templates_legacy/ckanext/stats/index.html:88
 msgid "Top Tags"
-msgstr "Beliebteste Tags"
+msgstr "Beliebteste Schlagworte"
 
 #: ckanext/stats/templates/ckanext/stats/index.html:136
 msgid "Tag Name"
@@ -6067,7 +6067,7 @@ msgstr "Datensatz Rangliste"
 msgid ""
 "Choose a dataset attribute and find out which categories in that area have "
 "the most datasets. E.g. tags, groups, license, res_format, country."
-msgstr "Wähle eine Datensatz-Eigenschaft und finde heraus, welche Kategorien in dieser Gegend die meisten Datensätze beinhalten. Z.B. tags, groups, license, res_format, country."
+msgstr "Wähle eine Datensatz-Eigenschaft und finde heraus, welche Kategorien in diesem Bereich die meisten Datensätze beinhalten. Z.B. Schlagworte, Kategorien, Lizenz, res_format, Land."
 
 #: ckanext/stats/templates_legacy/ckanext/stats/leaderboard.html:20
 msgid "Choose area"
@@ -6087,7 +6087,7 @@ msgstr "opendata.admin.ch"
 
 #: ckanext-ogdch/templates/ckan/header.html
 msgid "header.portal_subtitle"
-msgstr "Offene Behördendaten der Schweiz"
+msgstr "Pilotportal für offene Behördendaten der Schweiz"
 
 #: ckanext-ogdch/templates/ckan/header.html
 msgid "header.homepage_link"
@@ -6143,11 +6143,11 @@ msgstr "In der Kategorie"
 
 #: ckanext-ogdch/templates/ckan/package/read.html
 msgid "dataset.tags"
-msgstr "Tags"
+msgstr "Schlagworte"
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.no_dataset_found_message_part_one"
-msgstr "Leider konnten wir nichts passendes finden, "
+msgstr "Leider konnten wir nichts passendes finden. "
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.no_dataset_found_message_part_two"
@@ -6155,7 +6155,7 @@ msgstr " Sie uns damit wir diese Lücke schliessen können."
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.no_dataset_found_message_word_contact"
-msgstr "kontaktieren"
+msgstr "Kontaktieren"
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.result_title_single"
