@@ -3236,7 +3236,7 @@ msgstr ""
 #: ckan/templates/snippets/sort_by.html:17
 #: ckan/templates_legacy/js_strings.html:16
 msgid "Last Modified"
-msgstr "Modifié le"
+msgstr "récemment modifiés"
 
 #: ckan/templates/package/snippets/resource_form.html:57
 msgid "eg. 2012-06-05"
@@ -3501,15 +3501,15 @@ msgstr ""
 
 #: ckan/templates/snippets/facet_list.html:39
 msgid "Clear All"
-msgstr ""
+msgstr "effacer filtre"
 
 #: ckan/templates/snippets/facet_list.html:58
 msgid "Show More {facet}"
-msgstr ""
+msgstr "Voir plus de"
 
 #: ckan/templates/snippets/facet_list.html:60
 msgid "Show Only Popular {facet}"
-msgstr ""
+msgstr "Voir populaires"
 
 #: ckan/templates/snippets/facet_list.html:64
 msgid "There are no filters for this search"
@@ -3639,11 +3639,11 @@ msgstr "Pertinence"
 
 #: ckan/templates/snippets/sort_by.html:15
 msgid "Name Ascending"
-msgstr ""
+msgstr "Nom croissant"
 
 #: ckan/templates/snippets/sort_by.html:16
 msgid "Name Descending"
-msgstr ""
+msgstr "Nom décroissant"
 
 #: ckan/templates/snippets/subscribe.html:2
 msgid "Subscribe"
@@ -6087,7 +6087,7 @@ msgstr "opendata.admin.ch"
 
 #: ckanext-ogdch/templates/ckan/header.html
 msgid "header.portal_subtitle"
-msgstr "Portail pilote des données librement accessibles de l’administration publique suisse"
+msgstr "Portail pilote des données ouvertes de l’administration publique suisse"
 
 #: ckanext-ogdch/templates/ckan/header.html
 msgid "header.homepage_link"
@@ -6127,7 +6127,7 @@ msgstr "contacter"
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.looking_for_a_single_dataset"
-msgstr "Si vous avez des questions concernant un ensemble de données précis, veuillez vous adresser directement à l’auteur mentionné dans l’ensemble de données concerné. Si vous n’avez pas trouvé l’ensemble de données que vous cherchiez, merci de nous le"
+msgstr "Si vous avez des questions concernant un jeu de données précis, veuillez vous adresser directement à l’auteur mentionné dans le jeu de données concerné. Si vous n’avez pas trouvé le jeu de données que vous cherchiez, merci de nous le"
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.looking_for_a_single_dataset_link"
@@ -6147,15 +6147,15 @@ msgstr "Mots-clés"
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.no_dataset_found_message_part_one"
-msgstr "Vous avez cherché en vain un ensemble de données. "
+msgstr "Vous avez cherché en vain un jeu de données. Merci de nous "
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.no_dataset_found_message_part_two"
-msgstr "Merci de nous "
+msgstr "de quel jeu de données il s’agit."
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.no_dataset_found_message_word_contact"
-msgstr "communiquer de quel ensemble de données il s’agit"
+msgstr "communiquer"
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.result_title_single"
