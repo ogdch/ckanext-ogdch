@@ -4,3 +4,8 @@
     {{ super() }}
     <link rel="stylesheet" href="/latest-css/{{ h.get_css_version() }}" />
 {% endblock %}
+
+{% block title %}
+	{%- block subtitle %}{% endblock -%}
+    {%- if self.subtitle()|trim %}{% endif -%}
+{% endblock %}
