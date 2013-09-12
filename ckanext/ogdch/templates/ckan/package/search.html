@@ -2,7 +2,7 @@
 
 {% import 'macros/form.html' as form %}
 
-{% block subtitle %}{{ _("Search for a Dataset") }}{% endblock %}
+{% block subtitle %}{{ _('header.data_link') }} | {{ _('general.title') }}{% endblock %}
 
 {% block add_action_content %}
   {% if h.check_access('package_create') %}
