@@ -32,7 +32,7 @@
         {% snippet 'snippets/search_result_text.html', query=c.q, count=c.page.item_count, type='dataset' %}
       </h3>
     {% elif request.params and c.page.item_count == 0 %}
-      <p class="extra">{{ _('dataset.no_dataset_found_message_part_one') }}<a href="/{{ request.environ.CKAN_LANG }}/contact/app" title="{{ _('dataset.no_dataset_found_message_word_contact') }}">{{ _('dataset.no_dataset_found_message_word_contact') }}</a>{{ _('dataset.no_dataset_found_message_part_two') }}</p>
+      <p class="extra">{{ _('dataset.no_dataset_found_message_part_one') }}<a href="/{{ request.environ.CKAN_LANG }}/contact/dataset" title="{{ _('dataset.no_dataset_found_message_word_contact') }}">{{ _('dataset.no_dataset_found_message_word_contact') }}</a>{{ _('dataset.no_dataset_found_message_part_two') }}</p>
     {% endif %}
   </div>
 </div>
