@@ -422,7 +422,7 @@ msgstr "Bitte <a href=\"%s\">aktualisiere Dein Profil</a> und füge Deine Emaila
 #: ckan/controllers/home.py:98
 #, python-format
 msgid "%s uses your email address if you need to reset your password."
-msgstr "%s verwendet Deine Emailadresse für den Fall, daß Du Dein Paßwort zurücksetzen mußt."
+msgstr "%s verwendet Deine Emailadresse für den Fall, dass Du Dein Passwort zurücksetzen musst."
 
 #: ckan/controllers/home.py:102
 #, python-format
@@ -2125,7 +2125,7 @@ msgid ""
 "<code>&lt;head&gt;</code> tag of every page. If you wish to customize the "
 "templates more fully we recommend <a href=\"%(docs_url)s\" "
 "target=\"_blank\">reading the documentation</a>.</p> "
-msgstr " <p><strong>Seiten-Titel:</strong> Dies ist der Titel dieser CKAN-Instanz. Er erscheint an verschiedenen Orten auf CKAN.</p> <p><strong>Style:</strong> Wähle aus einer Liste von einfachen Variationen des Hauptfarbschemas um schnell ein angepasstes Theme zu erhalten.</p> <p><strong>Seiten-Logo:</strong> Dies ist das Logo, das im Kopf aller Templates dieser CKAN-Instanz erscheint.</p> <p><strong>Über:</strong> Dieser Text erscheint auf der <a href=\"%(about_url)s\">Über-Seite</a> dieser CKAN-Instanz.</p> <p><strong>Einführungstext:</strong> Dieser Text erscheint auf der <a href=\"%(home_url)s\">Homepage</a> dieser CKAN-Instanz um Besucher willkommen zu heißen.</p> <p><strong>Angepasstes CSS:</strong> Dieser CSS-Block erscheint im <code>&lt;head&gt;</code>-Tag auf jeder Seite. Wenn du die Templates anpassen möchtest, empfehlen wir, <a href=\"%(docs_url)s\" target=\"_blank\">die Dokumentation zu lesen</a>.</p> "
+msgstr " <p><strong>Seiten-Titel:</strong> Dies ist der Titel dieser CKAN-Instanz. Er erscheint an verschiedenen Orten auf CKAN.</p> <p><strong>Style:</strong> Wähle aus einer Liste von einfachen Variationen des Hauptfarbschemas um schnell ein angepasstes Theme zu erhalten.</p> <p><strong>Seiten-Logo:</strong> Dies ist das Logo, das im Kopf aller Templates dieser CKAN-Instanz erscheint.</p> <p><strong>Über:</strong> Dieser Text erscheint auf der <a href=\"%(about_url)s\">Über-Seite</a> dieser CKAN-Instanz.</p> <p><strong>Einführungstext:</strong> Dieser Text erscheint auf der <a href=\"%(home_url)s\">Homepage</a> dieser CKAN-Instanz um Besucher willkommen zu heissen.</p> <p><strong>Angepasstes CSS:</strong> Dieser CSS-Block erscheint im <code>&lt;head&gt;</code>-Tag auf jeder Seite. Wenn du die Templates anpassen möchtest, empfehlen wir, <a href=\"%(docs_url)s\" target=\"_blank\">die Dokumentation zu lesen</a>.</p> "
 
 #: ckan/templates/admin/confirm_reset.html:3
 #: ckan/templates/admin/confirm_reset.html:10
@@ -3246,7 +3246,7 @@ msgstr "z.B. 2012-06-05"
 
 #: ckan/templates/package/snippets/resource_form.html:59
 msgid "File Size"
-msgstr "Dateigröße"
+msgstr "Dateigrösse"
 
 #: ckan/templates/package/snippets/resource_form.html:59
 msgid "eg. 1024"
@@ -3909,7 +3909,7 @@ msgstr "Open ID"
 
 #: ckan/templates/user/read_base.html:82 ckan/templates/user/read_base.html:92
 msgid "This means only you can see this"
-msgstr "Das heißt, nur du kannst dies sehen"
+msgstr "Das heisst, nur du kannst dies sehen"
 
 #: ckan/templates/user/read_base.html:87
 msgid "Member Since"
@@ -4039,7 +4039,7 @@ msgstr "Speichern fehlgeschlagen, vermutlich wegen ungültigen Daten"
 msgid ""
 "You have unsaved changes. Make sure to click 'Save Changes' below before "
 "leaving this page."
-msgstr "Du hast ungespeicherte Änderungen. Klick auf 'Änderungen speichern' unten, bevor Du die Seite verläßt."
+msgstr "Du hast ungespeicherte Änderungen. Klick auf 'Änderungen speichern' unten, bevor Du die Seite verlässt."
 
 #: ckan/templates_legacy/js_strings.html:16
 msgid "(no name)"
@@ -4114,7 +4114,7 @@ msgstr "DataStore aktiviert"
 
 #: ckan/templates_legacy/js_strings.html:16
 msgid "Size (Bytes)"
-msgstr "Größe (Bytes)"
+msgstr "Grösse (Bytes)"
 
 #: ckan/templates_legacy/js_strings.html:16
 msgid "Mimetype"
@@ -4554,7 +4554,7 @@ msgid ""
 "[3:publicly-funded art] in Seattle? Data to answer many, many questions like"
 " these is out there on the Internet somewhere - but it is not always easy to"
 " find."
-msgstr "Was war 1935 der [1:durchschnittliche Preis] eines Hauses im Vereinigten Königreich? Wann wird Indiens Bevölkerung die chinesische [2:überholen]? Wo findest du [3:öffentlich geförderte Kunst] in Seattle? Die Daten um viele, viele Fragen wie diese zu beantworten, sind irgendwo da draußen im Internet - aber die Antwort ist nicht immer leicht zu finden."
+msgstr "Was war 1935 der [1:durchschnittliche Preis] eines Hauses im Vereinigten Königreich? Wann wird Indiens Bevölkerung die chinesische [2:überholen]? Wo findest du [3:öffentlich geförderte Kunst] in Seattle? Die Daten um viele, viele Fragen wie diese zu beantworten, sind irgendwo da draussen im Internet - aber die Antwort ist nicht immer leicht zu finden."
 
 #: ckan/templates_legacy/home/about.html:16
 #, python-format
@@ -4591,7 +4591,7 @@ msgid ""
 "listed in a CKAN catalogue at [3:publicdata.eu]. There is a comprehensive "
 "list of catalogues like these around the world at [4:datacatalogs.org], "
 "which is itself powered by CKAN."
-msgstr "CKAN wird von einer großen Anzahl Datenkataloge im Internet benutzt. [1:The Data Hub] ist ein von der Öffentlichkeit bearbeitbarer Datenkatalog im Wikipedia-Stil. Die UK-Regierung benutzt CKAN um [2:data.gov.uk] zu betreiben, zur Zeit mit 8.000 Regierungsdatensätzen. Die offiziellen Öffentlichen Daten der meisten europäischen Länder sind im CKAN-Katalog auf [3:publicdata.eu] gelistet. Du findest eine vollständige Liste von Katalogen wie diesem auf [4:datacatalogs.org], der ebenfalls mit CKAN betrieben wird."
+msgstr "CKAN wird von einer grossen Anzahl Datenkataloge im Internet benutzt. [1:The Data Hub] ist ein von der Öffentlichkeit bearbeitbarer Datenkatalog im Wikipedia-Stil. Die UK-Regierung benutzt CKAN um [2:data.gov.uk] zu betreiben, zur Zeit mit 8.000 Regierungsdatensätzen. Die offiziellen Öffentlichen Daten der meisten europäischen Länder sind im CKAN-Katalog auf [3:publicdata.eu] gelistet. Du findest eine vollständige Liste von Katalogen wie diesem auf [4:datacatalogs.org], der ebenfalls mit CKAN betrieben wird."
 
 #: ckan/templates_legacy/home/about.html:30
 msgid "Open data and the Open Knowledge Foundation"
@@ -5565,7 +5565,7 @@ msgstr "Mit OpenID anmelden"
 msgid ""
 "NB: To set-up your OpenID for this site, you first need to [1:Register] and "
 "then edit your Profile to provide your OpenID."
-msgstr "NB: Um Dein OpenID-Konto für diese Seite zu aktivieren, mußt Du zuerst [1:Registrieren] und dann die OpenID in Deinem Profil einfügen."
+msgstr "NB: Um Dein OpenID-Konto für diese Seite zu aktivieren, musst Du zuerst [1:Registrieren] und dann die OpenID in Deinem Profil einfügen."
 
 #: ckan/templates_legacy/user/login.html:64
 msgid "Please click your account provider:"
@@ -6115,19 +6115,19 @@ msgstr "Über das Portal"
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.do_you_have_general_questions_part_one"
-msgstr "Haben Sie Fragen zum OGD-Pilotportal? Antworten auf häufige Fragen finden Sie unter"
+msgstr "Haben Sie Fragen zum Open Government Data-Pilotportal? Antworten auf häufige gestellte Fragen finden Sie unter"
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.do_you_have_general_questions_part_two"
-msgstr "oder"
+msgstr "; andernfalls dürfen Sie uns gerne"
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.contact_us"
-msgstr "kontaktieren Sie uns"
+msgstr "kontaktieren"
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.looking_for_a_single_dataset"
-msgstr "Bei Fragen zu einem bestimmten Datensatz, wenden Sie sich bitte direkt an den beim Datensatz genannten Autor. Falls Sie einen Datensatz nicht gefunden haben können Sie uns dies gerne"
+msgstr ".<br>Bei Fragen zu einem bestimmten Datensatz, wenden Sie sich bitte direkt an den beim Datensatz genannten Autor. Falls Sie einen Datensatz nicht gefunden haben, können Sie uns dies gerne"
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.looking_for_a_single_dataset_link"
@@ -6147,7 +6147,7 @@ msgstr "Schlagworte"
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.no_dataset_found_message_part_one"
-msgstr "Leider konnten wir nichts passendes finden. "
+msgstr "Leider konnten wir nichts Passendes finden. "
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.no_dataset_found_message_part_two"
