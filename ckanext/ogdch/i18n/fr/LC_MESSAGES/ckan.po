@@ -3578,8 +3578,8 @@ msgstr ""
 #: ckan/templates/snippets/search_result_text.html:17
 msgid "{number} dataset found"
 msgid_plural "{number} datasets found"
-msgstr[0] "{number}Jeu de données trouvé"
-msgstr[1] "{number}Jeux de données trouvés"
+msgstr[0] "{number} Jeu de données trouvé"
+msgstr[1] "{number} Jeux de données trouvés"
 
 #: ckan/templates/snippets/search_result_text.html:18
 msgid "Sorry no datasets found"

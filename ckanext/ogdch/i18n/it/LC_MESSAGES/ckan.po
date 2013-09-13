@@ -3570,8 +3570,8 @@ msgstr "Aggiungi elemento"
 #: ckan/templates/snippets/search_result_text.html:15
 msgid "{number} dataset found for \"{query}\""
 msgid_plural "{number} datasets found for \"{query}\""
-msgstr[0] "{number} dataset trovato per \"{query}\""
-msgstr[1] "{number} dataset trovati per \"{query}\""
+msgstr[0] "{number} set di dati trovato per \"{query}\""
+msgstr[1] "{number} set di dati trovati per \"{query}\""
 
 #: ckan/templates/snippets/search_result_text.html:16
 msgid "Sorry no datasets found for \"{query}\""
@@ -3580,12 +3580,12 @@ msgstr "Spiacente, nessun dataset trovato per \"{query}\""
 #: ckan/templates/snippets/search_result_text.html:17
 msgid "{number} dataset found"
 msgid_plural "{number} datasets found"
-msgstr[0] "{number} dataset trovato"
-msgstr[1] "{number} dataset trovati"
+msgstr[0] "{number} set di dati trovato"
+msgstr[1] "{number} set di dati trovati"
 
 #: ckan/templates/snippets/search_result_text.html:18
 msgid "Sorry no datasets found"
-msgstr "Spiacente, nessun dataset trovato"
+msgstr "Spiacente, nessun set di dati trovato"
 
 #: ckan/templates/snippets/search_result_text.html:21
 msgid "{number} group found for \"{query}\""
@@ -3679,11 +3679,11 @@ msgstr ""
 
 #: ckan/templates/user/dashboard.html:30
 msgid "My Datasets"
-msgstr "I miei dataset"
+msgstr "I miei set di dati"
 
 #: ckan/templates/user/dashboard.html:43
 msgid "You do not have any datasets"
-msgstr "Non possiedi alcun dataset"
+msgstr "Non possiedi alcun set di dati"
 
 #: ckan/templates/user/edit.html:13
 msgid "Account Info"
@@ -3885,7 +3885,7 @@ msgstr ""
 
 #: ckan/templates/user/read.html:13
 msgid "You haven't created any datasets."
-msgstr "Non hai creato alcun dataset."
+msgstr "Non hai creato alcun set di dati."
 
 #: ckan/templates/user/read.html:15
 msgid "Create one now?"
@@ -3893,7 +3893,7 @@ msgstr "Vuoi crearne uno?"
 
 #: ckan/templates/user/read.html:20
 msgid "User hasn't created any datasets."
-msgstr "L'utente non ha creato alcun dataset."
+msgstr "L'utente non ha creato alcun set di dati."
 
 #: ckan/templates/user/read_base.html:50
 msgid "You have not provided a biography."
@@ -3975,11 +3975,11 @@ msgstr "qui."
 #: ckanext/stats/templates/ckanext/stats/index.html:114
 #: ckanext/stats/templates_legacy/ckanext/stats/index.html:82
 msgid "Number of datasets"
-msgstr "Numero di dataset"
+msgstr "Numero di set di dati"
 
 #: ckan/templates_legacy/_util.html:101
 msgid "View dataset resources"
-msgstr "Visualizza le risorse del dataset"
+msgstr "Visualizza le risorse del set di dati"
 
 #: ckan/templates_legacy/_util.html:101
 msgid "DOWNLOAD"
@@ -4189,12 +4189,12 @@ msgstr "Il DataStore ha restituito un errore"
 #: ckan/templates_legacy/layout_base.html:72
 #: ckan/templates_legacy/home/index.html:22
 msgid "Find datasets"
-msgstr "Cerca dataset"
+msgstr "Cerca set di dati"
 
 #: ckan/templates_legacy/layout_base.html:76
 #: ckan/templates_legacy/package/search.html:15
 msgid "Add a dataset"
-msgstr "Aggiungi un dataset"
+msgstr "Aggiungi un set di dati"
 
 #: ckan/templates_legacy/layout_base.html:94
 msgid "Page Logo"
@@ -4334,7 +4334,7 @@ msgstr "Eliminale completamente (per sempre e senza ripristino)"
 
 #: ckan/templates_legacy/admin/trash.html:27
 msgid "Deleted Datasets"
-msgstr "Dataset eliminati"
+msgstr "Set di dati eliminati"
 
 #: ckan/templates_legacy/admin/trash.html:29
 #: ckan/templates_legacy/package/new_package_form.html:107
@@ -4359,7 +4359,7 @@ msgstr "Modifica:"
 #: ckan/templates_legacy/group/edit_form.html:17
 #: ckan/templates_legacy/group/new_group_form.html:114
 msgid "There are no datasets currently in this group."
-msgstr "Non ci sono dataset in questa categoria, per ora."
+msgstr "Non ci sono set di dati in questa categoria, per ora."
 
 #: ckan/templates_legacy/group/history.html:5
 #: ckan/templates_legacy/group/history.html:6
@@ -4421,7 +4421,7 @@ msgid ""
 "when you want to restrict users from editing a collection. A [1:group] can "
 "be set-up to specify which users have permission to add or remove datasets "
 "from it."
-msgstr "Nonostante i parole chiave siano ottimi per raggruppare i dataset, in certi casi si vuole creare una raccolta che solo certi utenti possono modificare. Per indicare quali utenti sono autorizzati ad aggiungere e i modificare i dataset, è sufficiente creare un [1:gruppo]."
+msgstr "Nonostante i parole chiave siano ottimi per raggruppare i set di dati, in certi casi si vuole creare una raccolta che solo certi utenti possono modificare. Per indicare quali utenti sono autorizzati ad aggiungere e i modificare i set di dati, è sufficiente creare un [1:gruppo]."
 
 #: ckan/templates_legacy/group/layout.html:13
 #: ckan/templates_legacy/package/layout.html:38
@@ -4431,11 +4431,11 @@ msgstr "Cronologia"
 
 #: ckan/templates_legacy/group/layout.html:18
 msgid "New Dataset..."
-msgstr "Nuovo Dataset..."
+msgstr "Nuovo set di dati..."
 
 #: ckan/templates_legacy/group/layout.html:19
 msgid "Existing Dataset..."
-msgstr "Dataset esistente..."
+msgstr "Set di dati esistente..."
 
 #: ckan/templates_legacy/group/layout.html:29
 msgid "List Groups"
@@ -4529,7 +4529,7 @@ msgstr "Valore ="
 
 #: ckan/templates_legacy/group/new_group_form.html:116
 msgid "Add datasets"
-msgstr "Aggiungi dataset"
+msgstr "Aggiungi set di dati"
 
 #: ckan/templates_legacy/group/read.html:29
 #: ckan/templates_legacy/package/search.html:25
@@ -4545,7 +4545,7 @@ msgstr "Stato:"
 #: ckanext/organizations/templates_legacy/organizations/read.html:73
 #, python-format
 msgid "[1:You searched for \"%(query)s\". ]%(number_of_results)s datasets found."
-msgstr "[1:Cercato \"%(query)s\". ]%(number_of_results)s dataset trovati."
+msgstr "[1:Cercato \"%(query)s\". ]%(number_of_results)s set di dati trovati."
 
 #: ckan/templates_legacy/home/about.html:14
 msgid ""
@@ -4580,7 +4580,7 @@ msgid ""
 "who owns it and whether it is freely available, and what subject areas the "
 "data is about. Other users can improve or add to this information (CKAN "
 "keeps a fully versioned history)."
-msgstr "Questo sito è basato su un potente software open-source di catalogazione dei dati, chiamato [1:CKAN], sviluppato dalla [2:Open Knowledge Foundation]. Ogni voce di 'dataset' su CKAN contiene una descrizione dei dati e altre informazioni utili, come i formati disponibili, il detentore, la libertà di accesso e riuso, e gli argomenti che i dati affrontano. Gli altri utenti possono migliorare o modificare queste informazioni (CKAN mantiene una cronologia di tutte queste modifiche)."
+msgstr "Questo sito è basato su un potente software open-source di catalogazione dei dati, chiamato [1:CKAN], sviluppato dalla [2:Open Knowledge Foundation]. Ogni voce di 'set di dati' su CKAN contiene una descrizione dei dati e altre informazioni utili, come i formati disponibili, il detentore, la libertà di accesso e riuso, e gli argomenti che i dati affrontano. Gli altri utenti possono migliorare o modificare queste informazioni (CKAN mantiene una cronologia di tutte queste modifiche)."
 
 #: ckan/templates_legacy/home/about.html:27
 msgid ""
@@ -4591,7 +4591,7 @@ msgid ""
 "listed in a CKAN catalogue at [3:publicdata.eu]. There is a comprehensive "
 "list of catalogues like these around the world at [4:datacatalogs.org], "
 "which is itself powered by CKAN."
-msgstr "CKAN è utilizzato per diversi cataloghi di dati su Internet. [1:The Data Hub] è un catalogo liberamente modificabile e riutilizzabile, nello stile di Wikipedia. Il governo britannico usa CKAN per il portale [2:data.gov.uk], che attualmente conta circa 8000 dataset governativi. I dati pubblici ufficiali della maggior parte dei paesi europei sono raccolti in un catalogo CKAN su [3:publicdata.eu]. Esiste anche una lista di questi cataloghi da tutto il mondo su [4:datacatalogs.org], che è a sua volta basato su CKAN."
+msgstr "CKAN è utilizzato per diversi cataloghi di dati su Internet. [1:The Data Hub] è un catalogo liberamente modificabile e riutilizzabile, nello stile di Wikipedia. Il governo britannico usa CKAN per il portale [2:data.gov.uk], che attualmente conta circa 8000 set di dati governativi. I dati pubblici ufficiali della maggior parte dei paesi europei sono raccolti in un catalogo CKAN su [3:publicdata.eu]. Esiste anche una lista di questi cataloghi da tutto il mondo su [4:datacatalogs.org], che è a sua volta basato su CKAN."
 
 #: ckan/templates_legacy/home/about.html:30
 msgid "Open data and the Open Knowledge Foundation"
@@ -4607,7 +4607,7 @@ msgid ""
 " artworks when you visit the city. Open data means more enterprise, "
 "collaborative science and transparent government. You can read more about "
 "open data in the [1:Open Data Handbook]."
-msgstr "La maggior parte dei dati su %(site_title)s è liberamente accessibile e riutilizzabile: chiunque ha il diritto di utilizzare e riutilizzare i dati nel modo che preferisce. Magari qualcuno prenderà quel simpatico dataset sulle opere d'arte della città che avevi trovato tu, e lo aggiungerà a una mappa turistica - oppure svilupperà una nuova app per il tuo smartphone, che ti aiuterà a trovare i monumenti quando visiti la città. Gli open data significano più impresa, ricerca scientifica collaborativa e pubblica amministrazione trasparente. Puoi approfondire questo argomento nel [1:Open Data Handbook]."
+msgstr "La maggior parte dei dati su %(site_title)s è liberamente accessibile e riutilizzabile: chiunque ha il diritto di utilizzare e riutilizzare i dati nel modo che preferisce. Magari qualcuno prenderà quel simpatico set di dati sulle opere d'arte della città che avevi trovato tu, e lo aggiungerà a una mappa turistica - oppure svilupperà una nuova app per il tuo smartphone, che ti aiuterà a trovare i monumenti quando visiti la città. Gli open data significano più impresa, ricerca scientifica collaborativa e pubblica amministrazione trasparente. Puoi approfondire questo argomento nel [1:Open Data Handbook]."
 
 #: ckan/templates_legacy/home/about.html:34
 msgid ""
@@ -4648,11 +4648,11 @@ msgstr "Condividi dati"
 msgid ""
 "Add your own datasets to share them with others and\n"
 "          to find other people interested in your data."
-msgstr "Aggiungi i tuoi datasets per condividerli con gli altri e\n          per trovare persone interessate ai tuoi dati."
+msgstr "Aggiungi i tuoi set di dati per condividerli con gli altri e\n          per trovare persone interessate ai tuoi dati."
 
 #: ckan/templates_legacy/home/index.html:38
 msgid "Create a dataset »"
-msgstr "Crea un dataset »"
+msgstr "Crea un set di dati »"
 
 #: ckan/templates_legacy/home/index.html:40
 msgid "Sign up »"
