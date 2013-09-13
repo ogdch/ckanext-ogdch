@@ -1171,7 +1171,7 @@ msgstr "Utenten"
 #: ckanext/stats/templates_legacy/ckanext/stats/index.html:65
 #: ckanext/stats/templates_legacy/ckanext/stats/index.html:74
 msgid "Dataset"
-msgstr "Dataset"
+msgstr "Set di dati"
 
 #: ckan/logic/converters.py:156 ckan/logic/validators.py:167
 #: ckanext/stats/templates/ckanext/stats/index.html:113
@@ -2037,7 +2037,7 @@ msgstr "Iscriviti"
 #: ckan/templates_legacy/user/read.html:78
 #: ckanext/organizations/templates_legacy/organizations/read.html:68
 msgid "Datasets"
-msgstr "Dataset"
+msgstr "Set di dati"
 
 #: ckan/templates/header.html:79 ckan/templates/organization/edit_base.html:10
 #: ckan/templates/organization/index.html:6
@@ -3503,7 +3503,7 @@ msgstr "Trackback URL"
 
 #: ckan/templates/snippets/facet_list.html:39
 msgid "Clear All"
-msgstr "eliminare filtro"
+msgstr "pulisci tutto"
 
 #: ckan/templates/snippets/facet_list.html:58
 msgid "Show More {facet}"
@@ -4632,7 +4632,7 @@ msgstr "contiene"
 
 #: ckan/templates_legacy/home/index.html:24
 msgid "datasets"
-msgstr "dataset"
+msgstr "set di dati"
 
 #: ckan/templates_legacy/home/index.html:24
 msgid ""
@@ -4690,7 +4690,7 @@ msgstr "ha"
 
 #: ckan/templates_legacy/home/index.html:75
 msgid "datasets."
-msgstr "dataset"
+msgstr "set di dati"
 
 #: ckan/templates_legacy/importer/importer.html:5
 msgid "Importer"
@@ -6151,7 +6151,7 @@ msgstr "Purtroppo, non abbiamo trovato nulla di adeguato. "
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.no_dataset_found_message_part_two"
-msgstr "in modo che possiamo cercare di colmare questa lacuna noi."
+msgstr " in modo che possiamo cercare di colmare questa lacuna noi."
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.no_dataset_found_message_word_contact"
