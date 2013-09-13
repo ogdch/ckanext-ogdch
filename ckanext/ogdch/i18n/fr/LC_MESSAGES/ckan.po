@@ -6151,7 +6151,7 @@ msgstr "Vous avez cherché en vain un jeu de données. Merci de nous "
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.no_dataset_found_message_part_two"
-msgstr "de quel jeu de données il s’agit."
+msgstr " de quel jeu de données il s’agit."
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.no_dataset_found_message_word_contact"
