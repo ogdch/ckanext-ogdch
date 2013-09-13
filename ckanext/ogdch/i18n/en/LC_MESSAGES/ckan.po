@@ -6113,8 +6113,8 @@ msgstr "FAQ"
 msgid "header.about_link"
 msgstr "About the portal"
 
-#: ckanext-ogdch/ckanext/ogdch/templates/ckan/footer.html
-msgid "footer.do_you_have_general_questions"
+#: ckanext-ogdch/templates/ckan/footer.html
+msgid "footer.do_you_have_general_questions_part_one"
 msgstr "Do you have questions about the open government data pilot portal? Answers to frequently asked questions can be found under"
 
 #: ckanext-ogdch/templates/ckan/footer.html
@@ -6151,7 +6151,7 @@ msgstr "Unfortunately, we could not find anything suitable. "
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.no_dataset_found_message_part_two"
-msgstr "what data set you are looking for, so that we can try to close this gap."
+msgstr " what data set you are looking for, so that we can try to close this gap."
 
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.no_dataset_found_message_word_contact"
