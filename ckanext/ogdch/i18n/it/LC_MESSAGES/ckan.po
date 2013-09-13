@@ -3503,7 +3503,7 @@ msgstr "Trackback URL"
 
 #: ckan/templates/snippets/facet_list.html:39
 msgid "Clear All"
-msgstr "Pulisci tutto"
+msgstr "eliminare filtro"
 
 #: ckan/templates/snippets/facet_list.html:58
 msgid "Show More {facet}"
@@ -6087,7 +6087,7 @@ msgstr "opendata.admin.ch"
 
 #: ckanext-ogdch/templates/ckan/header.html
 msgid "header.portal_subtitle"
-msgstr "Portale pilota dei dati aperti dell’amministrazione pubblica svizzera"
+msgstr "Portale pilota per dati aperti dell’amministrazione pubblica svizzera"
 
 #: ckanext-ogdch/templates/ckan/header.html
 msgid "header.homepage_link"
