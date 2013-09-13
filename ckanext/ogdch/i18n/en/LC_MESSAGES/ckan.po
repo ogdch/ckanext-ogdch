@@ -6115,11 +6115,11 @@ msgstr "About the portal"
 
 #: ckanext-ogdch/ckanext/ogdch/templates/ckan/footer.html
 msgid "footer.do_you_have_general_questions"
-msgstr "Do you have questions about the open government data pilot portal? Answers to frequently asked questions can be found under: "
+msgstr "Do you have questions about the open government data pilot portal? Answers to frequently asked questions can be found under"
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.do_you_have_general_questions_part_two"
-msgstr "; alternatively, please feel free to "
+msgstr "; alternatively, please feel free to"
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.contact_us"
