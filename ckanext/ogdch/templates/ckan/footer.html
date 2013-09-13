@@ -2,7 +2,7 @@
   <div class="row-fluid">
     {% block footer_content %}
       <div class="span12">
-        <p>{{ _('footer.do_you_have_general_questions_part_one') }} <a href="/{{ request.environ.CKAN_LANG }}/faq" title="{{ _('header.faq_link') }}">{{ _('header.faq_link') }}</a> {{ _('footer.do_you_have_general_questions_part_two') }} <a href="/{{ request.environ.CKAN_LANG }}/contact" title="{{ _('footer.contact_us') }}">{{ _('footer.contact_us') }}</a>.</p>
+        <p>{{ _('footer.do_you_have_general_questions_part_one') }} <a href="/{{ request.environ.CKAN_LANG }}/faq" title="{{ _('header.faq_link') }}">{{ _('header.faq_link') }}</a>{{ _('footer.do_you_have_general_questions_part_two') }} <a href="/{{ request.environ.CKAN_LANG }}/contact" title="{{ _('footer.contact_us') }}">{{ _('footer.contact_us') }}</a>.</p>
 
         <p>{{ _('footer.looking_for_a_single_dataset') }} <a href="/{{ request.environ.CKAN_LANG }}/contact/dataset" title="{{ _('footer.looking_for_a_single_dataset_link') }}">{{ _('footer.looking_for_a_single_dataset_link') }}</a>.</p>
 
