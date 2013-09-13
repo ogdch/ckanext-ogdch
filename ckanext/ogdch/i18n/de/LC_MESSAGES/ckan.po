@@ -6127,7 +6127,7 @@ msgstr "kontaktieren"
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.looking_for_a_single_dataset"
-msgstr ".<br>Bei Fragen zu einem bestimmten Datensatz, wenden Sie sich bitte direkt an den beim Datensatz genannten Autor. Falls Sie einen Datensatz nicht gefunden haben, können Sie uns dies gerne"
+msgstr "Bei Fragen zu einem bestimmten Datensatz, wenden Sie sich bitte direkt an den beim Datensatz genannten Autor. Falls Sie einen Datensatz nicht gefunden haben, können Sie uns dies gerne"
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.looking_for_a_single_dataset_link"
