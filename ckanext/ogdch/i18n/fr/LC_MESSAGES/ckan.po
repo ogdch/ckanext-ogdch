@@ -2917,7 +2917,7 @@ msgstr "Source: <a href=\"%(url)s\">%(dataset)s</a>"
 #: ckan/templates_legacy/package/resource_read.html:159
 #: ckanext/organizations/templates_legacy/organizations/package_form.html:242
 msgid "Additional Information"
-msgstr "Informations additionnelles"
+msgstr "Informations supplémentaires"
 
 #: ckan/templates/package/resource_read.html:78
 #: ckan/templates/package/snippets/additional_info.html:6
@@ -3048,7 +3048,7 @@ msgstr "Source"
 #: ckanext/example_idatasetform/templates/package/snippets/package_metadata_fields.html:23
 #: ckanext/organizations/templates_legacy/organizations/package_form.html:217
 msgid "Maintainer"
-msgstr "Mainteneur"
+msgstr "Entretenu par"
 
 #: ckan/templates/package/snippets/additional_info.html:44
 #: ckan/templates_legacy/package/new_package_form.html:220
@@ -3236,7 +3236,7 @@ msgstr ""
 #: ckan/templates/snippets/sort_by.html:17
 #: ckan/templates_legacy/js_strings.html:16
 msgid "Last Modified"
-msgstr "récemment modifiés"
+msgstr "Récemment modifiés"
 
 #: ckan/templates/package/snippets/resource_form.html:57
 msgid "eg. 2012-06-05"
@@ -3293,7 +3293,7 @@ msgstr "Aperçu"
 
 #: ckan/templates/package/snippets/resources_list.html:13
 msgid "Data and Resources"
-msgstr ""
+msgstr "Données et ressources"
 
 #: ckan/templates/package/snippets/resources_list.html:23
 #, python-format
@@ -3505,11 +3505,11 @@ msgstr "effacer filtre"
 
 #: ckan/templates/snippets/facet_list.html:58
 msgid "Show More {facet}"
-msgstr "Voir plus de"
+msgstr "Voir plus de {facet}"
 
 #: ckan/templates/snippets/facet_list.html:60
 msgid "Show Only Popular {facet}"
-msgstr "Voir populaires"
+msgstr "Voir {facet} populaires"
 
 #: ckan/templates/snippets/facet_list.html:64
 msgid "There are no filters for this search"
@@ -3631,7 +3631,7 @@ msgstr ""
 
 #: ckan/templates/snippets/sort_by.html:12
 msgid "Order by"
-msgstr "Par Ordre"
+msgstr "Trier par"
 
 #: ckan/templates/snippets/sort_by.html:14
 msgid "Relevance"
