@@ -14,4 +14,4 @@ cd /home/www-data/ckanext-ogdch
 python setup.py develop
 ```
 
-Make sure to add *`ogdch`* to `ckan.plugins` in your config file.
+Make sure to add `ogdch` to `ckan.plugins` in your config file.
