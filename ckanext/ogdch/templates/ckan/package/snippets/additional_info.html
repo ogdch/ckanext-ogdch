@@ -1,0 +1,104 @@
+<div class="row-fluid">
+  <div class="span6">
+    <section class="module-content additional-info">
+      <div class="row-fluid box-header">
+        <div class="span12">
+          <span>{{ _('Additional Info') }}</span>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="span12 box-container">
+          <ul id="additional-info">
+            {% if pkg_dict.url %}
+              <li>
+                <span scope="row" class="dataset-label">{{ _('Source') }}</span>
+                <span class="dataset-details" property="foaf:homepage">{{ h.link_to(pkg_dict.url, pkg_dict.url, rel='foaf:homepage', target='_blank') }}</span>
+              </li>
+            {% endif %}
+
+            {% if pkg_dict.author_email %}
+              <li>
+                <span scope="row" class="dataset-label">{{ _("Author") }}</span>
+                <span class="dataset-details" property="dc:creator">{{ h.mail_to(email_address=pkg_dict.author_email, name=pkg_dict.author) }}</span>
+              </li>
+            {% elif pkg_dict.author %}
+              <li>
+                <span scope="row" class="dataset-label">{{ _("Author") }}</span>
+                <span class="dataset-details" property="dc:creator">{{ pkg_dict.author }}</span>
+              </li>
+            {% endif %}
+
+            {% if pkg_dict.maintainer_email %}
+              <li>
+                <span scope="row" class="dataset-label">{{ _('Maintainer') }}</span>
+                <span class="dataset-details" property="dc:contributor">{{ h.mail_to(email_address=pkg_dict.maintainer_email, name=pkg_dict.maintainer) }}</span>
+              </li>
+            {% elif pkg_dict.maintainer %}
+              <li>
+                <span scope="row" class="dataset-label">{{ _('Maintainer') }}</span>
+                <span class="dataset-details" property="dc:contributor">{{ pkg_dict.maintainer }}</span>
+              </li>
+            {% endif %}
+
+            {% if pkg_dict.version %}
+              <li>
+                <span scope="row" class="dataset-label">{{ _("Version") }}</span>
+                <span class="dataset-details">{{ pkg_dict.version }}</span>
+              </li>
+            {% endif %}
+
+            {% if h.check_access('package_update',{'id':pkg_dict.id}) %}
+              <li>
+                <span scope="row" class="dataset-label">{{ _("State") }}</span>
+                <span class="dataset-details">{{ pkg_dict.state }}</span>
+              </li>
+            {% endif %}
+
+            {% for extra in h.sorted_extras(pkg_dict.extras) %}
+              {% set key, value = extra %}
+              <li rel="dc:relation" resource="_:extra{{ i }}">
+                <span scope="row" class="dataset-label" property="rdfs:label">{{ _(key) }}</span>
+                <span class="dataset-details" property="rdf:value">{{ value }}</span>
+              </li>
+            {% endfor %}
+
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div id="license" class="span6">
+    <section class="module-content additional-info">
+        <div class="row-fluid box-header">
+          <div class="span12">
+            <span>{{ _('License') }}</span>
+          </div>
+        </div>
+        <div class="box-container">
+          {% if pkg_dict.license_id %}
+            {% if h.get_license_url(pkg_dict) %}
+              <a href="{{ h.get_license_url(pkg_dict) }}" property="dc:rights">
+                <span class="license-title">{{ pkg_dict.license_title }}</span>
+              </a>
+            {% else %}
+              <span class="license-title" property="dc:rights">
+                {{ pkg_dict.license_title }}
+              </span>
+            {% endif %}
+
+            {% if not text_only %}
+              {% if pkg_dict.isopen %}
+              <div>
+                <a href="http://opendefinition.org/okd/" title="{{ _('This dataset satisfies the Open Definition.') }}">
+                  <img class="open-data" src="http://assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="[Open Data]" />
+                </a>
+              </div>
+              {% endif %}
+            {% endif %}
+          {% elif text_only %}
+            {{ _('No License Provided') }}
+          {% endif %}
+        </div>
+    </section>
+  </div>
+</div>

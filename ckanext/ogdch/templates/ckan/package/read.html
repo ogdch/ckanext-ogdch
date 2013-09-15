@@ -1,0 +1,51 @@
+{% extends "package/read_base.html" %}
+
+{% set pkg = c.pkg_dict %}
+
+{% block subtitle %}{{ pkg.title or pkg.name }} | {{ _('general.title') }}{% endblock %}
+
+{% block primary_content_inner %}
+
+  {% block package_description %}
+    <section class="module-content">
+      {% if pkg.private %}
+        <span class="dataset-private label label-inverse pull-right">
+          <i class="icon-lock"></i>
+          {{ _('Private') }}
+        </span>
+      {% endif %}
+      <h1>
+        <span class="ogd_title">{{ pkg.title or pkg.name }}</span>
+        {% if pkg.state.startswith('draft') %}
+          [{{ _('Draft') }}]
+        {% endif %}
+      </h1>
+      {% if c.pkg_notes_formatted %}
+        <div class="notes embedded-content">
+          <span class="ogd_title">{{ _('dataset.in_the_category') }}:</span>
+
+          {% if pkg.groups %}
+            <a href="{{ h.url_for(controller='package', action='search', groups=pkg.groups[0].name) }}">
+              {{ pkg.groups[0].title or pkg.groups[0].name }}
+            </a>
+          {% endif %}
+
+          {{ c.pkg_notes_formatted }}
+
+          {% block package_tags %}
+            {% snippet "package/snippets/tags.html", tags=pkg.tags %}
+          {% endblock %}
+        </div>
+      {% endif %}
+    </section>
+  {% endblock %}
+
+  {% block package_resources %}
+    {% snippet "package/snippets/resources_list.html", pkg=pkg, resources=pkg.resources %}
+  {% endblock %}
+
+  {% block package_additional_info %}
+    {% snippet "package/snippets/additional_info.html", pkg_dict=pkg %}
+  {% endblock %}
+
+{% endblock %}

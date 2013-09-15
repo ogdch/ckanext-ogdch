@@ -17,12 +17,12 @@
   <div class="row-fluid">
     <hgroup class="span4 {{ g.header_class }}">
       {% block header_logo %}
-        <a class="logo" href="/{{ request.environ.CKAN_LANG }}"><img src="http://ogd.lo/bundles/ogdchcore/images/admin-logo.png" alt="{{ _('header.title') }} Logo" title="{{ _('header.title') }} Logo" /></a>
+        <a class="logo" href="/{{ request.environ.CKAN_LANG }}"><img src="/bundles/ogdchcore/images/admin-logo.png" alt="{{ _('header.title') }} Logo" title="{{ _('header.title') }} Logo" /></a>
       {% endblock %}
     </hgroup>
 
     <div class="span8" id="ogd-portal-description">
-      <h2>www.opendata.admin.ch</h2>
+      <h2>{{ _('header.title') }}</h2>
       <h3>{{ _('header.portal_subtitle') }}</h3>
     </div>
   </div>

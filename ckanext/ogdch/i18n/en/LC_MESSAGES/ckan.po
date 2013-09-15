@@ -258,7 +258,7 @@ msgstr ""
 #: ckan/controllers/group.py:600 ckan/controllers/group.py:659
 #: ckan/controllers/group.py:741 ckanext/organizations/controllers.py:136
 msgid "Group not found"
-msgstr ""
+msgstr "Category not found"
 
 #: ckan/controllers/feed.py:286 ckan/controllers/feed.py:288
 #: ckan/controllers/feed.py:440 ckan/controllers/feed.py:442
@@ -270,7 +270,7 @@ msgstr ""
 #: ckan/controllers/group.py:743
 #, python-format
 msgid "Unauthorized to read group %s"
-msgstr ""
+msgstr "Unauthorized to read category %s"
 
 #: ckan/controllers/group.py:182
 msgid "Cannot render description"
@@ -289,7 +289,7 @@ msgstr ""
 #: ckan/templates_legacy/package/search.html:26
 #: ckan/templates_legacy/revision/read.html:64
 msgid "Groups"
-msgstr ""
+msgstr "Categories"
 
 #: ckan/controllers/group.py:253 ckan/controllers/home.py:67
 #: ckan/controllers/package.py:239 ckan/lib/helpers.py:528
@@ -319,7 +319,7 @@ msgstr ""
 
 #: ckan/controllers/group.py:331
 msgid "Unauthorized to create a group"
-msgstr ""
+msgstr "Unauthorized to create a category"
 
 #: ckan/controllers/group.py:377 ckan/controllers/package.py:778
 #: ckanext/organizations/controllers.py:147
@@ -336,7 +336,7 @@ msgstr ""
 #: ckan/controllers/group.py:512 ckan/controllers/group.py:566
 #, python-format
 msgid "Unauthorized to delete group %s"
-msgstr ""
+msgstr "Unauthorized to delete category %s"
 
 #: ckan/controllers/group.py:492
 msgid "Organization has been deleted."
@@ -344,21 +344,21 @@ msgstr ""
 
 #: ckan/controllers/group.py:494
 msgid "Group has been deleted."
-msgstr ""
+msgstr "Category has been deleted."
 
 #: ckan/controllers/group.py:539
 #, python-format
 msgid "Unauthorized to add member to group %s"
-msgstr ""
+msgstr "Unauthorized to add member to category %s"
 
 #: ckan/controllers/group.py:554
 #, python-format
 msgid "Unauthorized to delete group %s members"
-msgstr ""
+msgstr "Unauthorized to delete category %s members"
 
 #: ckan/controllers/group.py:560
 msgid "Group member has been deleted."
-msgstr ""
+msgstr "Category member has been deleted."
 
 #: ckan/controllers/group.py:583 ckan/controllers/package.py:409
 msgid "Select two revisions before doing the comparison."
@@ -371,10 +371,10 @@ msgstr ""
 
 #: ckan/controllers/group.py:609
 msgid "CKAN Group Revision History"
-msgstr ""
+msgstr "CKAN Group Revision History"
 
 #: ckan/controllers/group.py:612
-msgid "Recent changes to CKAN Group: "
+msgid "Recent changes to CKAN Category: "
 msgstr ""
 
 #: ckan/controllers/group.py:633 ckan/controllers/package.py:459
@@ -383,7 +383,7 @@ msgstr ""
 
 #: ckan/controllers/group.py:662
 msgid "Unauthorized to read group {group_id}"
-msgstr ""
+msgstr "Unauthorized to read category {group_id}"
 
 #: ckan/controllers/group.py:682 ckan/controllers/package.py:1238
 #: ckan/controllers/user.py:594
@@ -778,7 +778,7 @@ msgstr ""
 
 #: ckan/lib/activity_streams.py:67
 msgid "{actor} updated the group {group}"
-msgstr ""
+msgstr "{actor} updated the category {group}"
 
 #: ckan/lib/activity_streams.py:70
 msgid "{actor} updated the organization {organization}"
@@ -802,7 +802,7 @@ msgstr ""
 
 #: ckan/lib/activity_streams.py:85
 msgid "{actor} deleted the group {group}"
-msgstr ""
+msgstr "{actor} deleted the category {group}"
 
 #: ckan/lib/activity_streams.py:88
 msgid "{actor} deleted the organization {organization}"
@@ -822,7 +822,7 @@ msgstr ""
 
 #: ckan/lib/activity_streams.py:100
 msgid "{actor} created the group {group}"
-msgstr ""
+msgstr "{actor} created the category {group}"
 
 #: ckan/lib/activity_streams.py:103
 msgid "{actor} created the organization {organization}"
@@ -1171,7 +1171,7 @@ msgstr ""
 #: ckanext/stats/templates/ckanext/stats/index.html:113
 #: ckanext/stats/templates_legacy/ckanext/stats/index.html:82
 msgid "Group"
-msgstr ""
+msgstr "Category"
 
 #: ckan/logic/validators.py:23
 msgid "A organization must be supplied"
@@ -1200,7 +1200,7 @@ msgstr ""
 
 #: ckan/logic/validators.py:191
 msgid "That group name or ID does not exist."
-msgstr ""
+msgstr "That category name or ID does not exist."
 
 #: ckan/logic/validators.py:205
 msgid "Activity type"
@@ -1252,7 +1252,7 @@ msgstr ""
 
 #: ckan/logic/validators.py:332
 msgid "Group name already exists in database"
-msgstr ""
+msgstr "Category name already exists in database"
 
 #: ckan/logic/validators.py:338
 #, python-format
@@ -1348,7 +1348,7 @@ msgstr ""
 
 #: ckan/logic/action/create.py:631
 msgid "Trying to create an organization as a group"
-msgstr ""
+msgstr "Trying to create an organization as a category"
 
 #: ckan/logic/action/create.py:719
 msgid "You must supply a package id or name (parameter \"package\")."
@@ -1386,7 +1386,7 @@ msgstr ""
 
 #: ckan/logic/action/create.py:1153 ckan/logic/action/create.py:1161
 msgid "You must be logged in to follow a group."
-msgstr ""
+msgstr "You must be logged in to follow a category."
 
 #: ckan/logic/action/delete.py:40
 #, python-format
@@ -1483,7 +1483,7 @@ msgstr ""
 #: ckan/logic/auth/create.py:21 ckan/logic/auth/update.py:33
 #, python-format
 msgid "User %s not authorized to edit these groups"
-msgstr ""
+msgstr "User %s not authorized to edit these categories"
 
 #: ckan/logic/auth/create.py:43
 msgid "You must be a sysadmin to create a featured related item"
@@ -1501,7 +1501,7 @@ msgstr ""
 #: ckan/logic/auth/create.py:82
 #, python-format
 msgid "User %s not authorized to create groups"
-msgstr ""
+msgstr "User %s not authorized to create categories"
 
 #: ckan/logic/auth/create.py:92
 #, python-format
@@ -1515,7 +1515,7 @@ msgstr ""
 
 #: ckan/logic/auth/create.py:133
 msgid "Group was not found."
-msgstr ""
+msgstr "Category was not found."
 
 #: ckan/logic/auth/create.py:153
 msgid "Valid API key needed to create a package"
@@ -1523,7 +1523,7 @@ msgstr ""
 
 #: ckan/logic/auth/create.py:161
 msgid "Valid API key needed to create a group"
-msgstr ""
+msgstr "Valid API key needed to create a category"
 
 #: ckan/logic/auth/create.py:181
 #, python-format
@@ -1557,12 +1557,12 @@ msgstr ""
 #: ckan/logic/auth/delete.py:79
 #, python-format
 msgid "User %s not authorized to delete groups"
-msgstr ""
+msgstr "User %s not authorized to delete categories"
 
 #: ckan/logic/auth/delete.py:83
 #, python-format
 msgid "User %s not authorized to delete group %s"
-msgstr ""
+msgstr "User %s not authorized to delete category %s"
 
 #: ckan/logic/auth/delete.py:92
 #, python-format
@@ -1621,7 +1621,7 @@ msgstr ""
 #: ckan/logic/auth/update.py:79
 #, python-format
 msgid "User %s not authorized to edit group %s"
-msgstr ""
+msgstr "User %s not authorized to edit category %s"
 
 #: ckan/logic/auth/update.py:89
 #, python-format
@@ -1639,12 +1639,12 @@ msgstr ""
 #: ckan/logic/auth/update.py:120
 #, python-format
 msgid "User %s not authorized to change state of group %s"
-msgstr ""
+msgstr "User %s not authorized to change state of category %s"
 
 #: ckan/logic/auth/update.py:129
 #, python-format
 msgid "User %s not authorized to edit permissions of group %s"
-msgstr ""
+msgstr "User %s not authorized to edit permissions of category %s"
 
 #: ckan/logic/auth/update.py:141
 #, python-format
@@ -1672,7 +1672,7 @@ msgstr ""
 
 #: ckan/logic/auth/update.py:192
 msgid "Valid API key needed to edit a group"
-msgstr ""
+msgstr "Valid API key needed to edit a category"
 
 #: ckan/model/license.py:177
 msgid "License Not Specified"
@@ -2233,7 +2233,7 @@ msgstr ""
 #: ckan/templates/group/about.html:11 ckan/templates/group/read_base.html:50
 #: ckan/templates/snippets/group.html:24 ckan/templates/snippets/group_item.html:17
 msgid "There is no description for this group"
-msgstr ""
+msgstr "There is no description for this category"
 
 #: ckan/templates/group/activity_stream.html:3
 #: ckan/templates/group/activity_stream.html:7
@@ -2262,11 +2262,11 @@ msgstr ""
 #: ckan/templates/group/base_form_page.html:7
 #: ckan/templates_legacy/group/layout.html:32
 msgid "Add a Group"
-msgstr ""
+msgstr "Add a Category"
 
 #: ckan/templates/group/base_form_page.html:13
 msgid "Group Form"
-msgstr ""
+msgstr "Category Form"
 
 #: ckan/templates/group/confirm_delete.html:3
 #: ckan/templates/group/confirm_delete.html:14
@@ -2287,7 +2287,7 @@ msgstr ""
 
 #: ckan/templates/group/confirm_delete.html:10
 msgid "Are you sure you want to delete group - {name}?"
-msgstr ""
+msgstr "Are you sure you want to delete category - {name}?"
 
 #: ckan/templates/group/confirm_delete_member.html:10
 #: ckan/templates/organization/confirm_delete_member.html:10
@@ -2296,11 +2296,11 @@ msgstr ""
 
 #: ckan/templates/group/edit.html:3 ckan/templates/group/edit.html:7
 msgid "Edit a Group"
-msgstr ""
+msgstr "Edit a Category"
 
 #: ckan/templates/group/edit.html:5
 msgid "Edit Group"
-msgstr ""
+msgstr "Edit Category"
 
 #: ckan/templates/group/followers.html:3 ckan/templates/group/followers.html:7
 #: ckan/templates/group/read_base.html:54 ckan/templates/package/followers.html:3
@@ -2318,17 +2318,17 @@ msgstr ""
 #: ckan/templates/group/index.html:3 ckan/templates_legacy/group/index.html:6
 #: ckan/templates_legacy/group/index.html:7
 msgid "Groups of Datasets"
-msgstr ""
+msgstr "Categories of Datasets"
 
 #: ckan/templates/group/index.html:11
 #: ckan/templates/package/snippets/package_metadata_fields.html:46
 #: ckan/templates_legacy/js_strings.html:16
 msgid "Add Group"
-msgstr ""
+msgstr "Add Category"
 
 #: ckan/templates/group/index.html:23
 msgid "There are currently no groups for this site"
-msgstr ""
+msgstr "There are currently no categories for this site"
 
 #: ckan/templates/group/index.html:25 ckan/templates/organization/index.html:25
 #: ckanext/organizations/templates/organizations/index.html:23
@@ -2337,7 +2337,7 @@ msgstr ""
 
 #: ckan/templates/group/index.html:38
 msgid "What are Groups?"
-msgstr ""
+msgstr "What are Categories?"
 
 #: ckan/templates/group/index.html:41
 msgid ""
@@ -2347,6 +2347,11 @@ msgid ""
 " of a group, but do not belong to the group for editing or authorisation "
 "purposes.</p> "
 msgstr ""
+" <p>Categories allow you to group together datasets under a community (for "
+"example, Civil Liberty data) or topic (e.g. Transport, Health, Environment) "
+"to make it easier for users to browse datasets by theme. Datasets can be part"
+" of a category, but do not belong to the category for editing or authorisation "
+"purposes.</p> "
 
 #: ckan/templates/group/member_new.html:13 ckan/templates/group/members.html:19
 #: ckan/templates/organization/edit_base.html:34
@@ -2420,15 +2425,15 @@ msgstr ""
 
 #: ckan/templates/group/new.html:3 ckan/templates/group/new.html:7
 msgid "Create a Group"
-msgstr ""
+msgstr "Create a Category"
 
 #: ckan/templates/group/new.html:5 ckan/templates/group/new_group_form.html:19
 msgid "Create Group"
-msgstr ""
+msgstr "Create Category"
 
 #: ckan/templates/group/new_group_form.html:17
 msgid "Update Group"
-msgstr ""
+msgstr "Update Category"
 
 #: ckan/templates/group/read_base.html:12
 #: ckan/templates/organization/read_base.html:12
@@ -2448,7 +2453,7 @@ msgstr ""
 #: ckan/templates/group/snippets/feeds.html:3
 #: ckan/templates/organization/snippets/feeds.html:3
 msgid "Datasets in group: {group}"
-msgstr ""
+msgstr "Datasets in category: {group}"
 
 #: ckan/templates/group/snippets/feeds.html:4
 #: ckan/templates/organization/snippets/feeds.html:4
@@ -2471,11 +2476,11 @@ msgstr ""
 
 #: ckan/templates/group/snippets/group_form.html:10
 msgid "My Group"
-msgstr ""
+msgstr "My Category"
 
 #: ckan/templates/group/snippets/group_form.html:18
 msgid "my-group"
-msgstr ""
+msgstr "my-category"
 
 #: ckan/templates/group/snippets/group_form.html:20
 #: ckan/templates/organization/snippets/organization_form.html:20
@@ -2495,7 +2500,7 @@ msgstr ""
 
 #: ckan/templates/group/snippets/group_form.html:20
 msgid "A little information about my group..."
-msgstr ""
+msgstr "A little information about my category..."
 
 #: ckan/templates/group/snippets/group_form.html:22
 #: ckan/templates/organization/snippets/organization_form.html:22
@@ -2513,11 +2518,11 @@ msgstr ""
 
 #: ckan/templates/group/snippets/group_form.html:75
 msgid "Are you sure you want to delete this Group?"
-msgstr ""
+msgstr "Are you sure you want to delete this Category?"
 
 #: ckan/templates/group/snippets/group_form.html:79
 msgid "Save Group"
-msgstr ""
+msgstr "Save Category"
 
 #: ckan/templates/group/snippets/group_item.html:23
 #: ckan/templates/organization/snippets/organization_item.html:23
@@ -2527,7 +2532,7 @@ msgstr ""
 
 #: ckan/templates/group/snippets/group_item.html:30
 msgid "This group has no description"
-msgstr ""
+msgstr "This category has no description"
 
 #: ckan/templates/group/snippets/group_item.html:33
 #: ckan/templates/organization/snippets/organization_item.html:33
@@ -3553,22 +3558,22 @@ msgstr "Sorry no datasets found"
 #: ckan/templates/snippets/search_result_text.html:21
 msgid "{number} group found for \"{query}\""
 msgid_plural "{number} groups found for \"{query}\""
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{number} category found for \"{query}\""
+msgstr[1] "{number} categories found for \"{query}\""
 
 #: ckan/templates/snippets/search_result_text.html:22
 msgid "Sorry no groups found for \"{query}\""
-msgstr ""
+msgstr "Sorry no categories found for \"{query}\""
 
 #: ckan/templates/snippets/search_result_text.html:23
 msgid "{number} group found"
 msgid_plural "{number} groups found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{number} category found"
+msgstr[1] "{number} categories found"
 
 #: ckan/templates/snippets/search_result_text.html:24
 msgid "Sorry no groups found"
-msgstr ""
+msgstr "Sorry no categories found"
 
 #: ckan/templates/snippets/search_result_text.html:27
 msgid "{number} organization found for \"{query}\""
@@ -3806,7 +3811,7 @@ msgstr ""
 
 #: ckan/templates/user/new.html:22
 msgid "Create datasets, groups and other exciting things"
-msgstr ""
+msgstr "Create datasets, categories and other exciting things"
 
 #: ckan/templates/user/new_user_form.html:6
 msgid "Full Name"
@@ -4314,7 +4319,7 @@ msgstr ""
 #: ckan/templates_legacy/group/edit_form.html:17
 #: ckan/templates_legacy/group/new_group_form.html:114
 msgid "There are no datasets currently in this group."
-msgstr ""
+msgstr "There are no datasets currently in this category."
 
 #: ckan/templates_legacy/group/history.html:5
 #: ckan/templates_legacy/group/history.html:6
@@ -4364,11 +4369,11 @@ msgstr ""
 
 #: ckan/templates_legacy/group/history.html:54
 msgid "Group History"
-msgstr ""
+msgstr "Category History"
 
 #: ckan/templates_legacy/group/index.html:11
 msgid "What Are Groups?"
-msgstr ""
+msgstr "What Are Categories?"
 
 #: ckan/templates_legacy/group/index.html:12
 msgid ""
@@ -4394,15 +4399,15 @@ msgstr ""
 
 #: ckan/templates_legacy/group/layout.html:29
 msgid "List Groups"
-msgstr ""
+msgstr "List Categories"
 
 #: ckan/templates_legacy/group/layout.html:35
 msgid "Login to Add a Group"
-msgstr ""
+msgstr "Login to Add a Category"
 
 #: ckan/templates_legacy/group/new.html:5 ckan/templates_legacy/group/new.html:6
 msgid "Add A Group"
-msgstr ""
+msgstr "Add A Category"
 
 #: ckan/templates_legacy/group/new_group_form.html:13
 #: ckan/templates_legacy/package/form.html:7
@@ -4444,7 +4449,7 @@ msgstr ""
 
 #: ckan/templates_legacy/group/new_group_form.html:50
 msgid "The URL for the image that is associated with this group."
-msgstr ""
+msgstr "The URL for the image that is associated with this category."
 
 #: ckan/templates_legacy/group/new_group_form.html:57
 #: ckan/templates_legacy/package/new_package_form.html:271
@@ -4855,7 +4860,7 @@ msgstr ""
 
 #: ckan/templates_legacy/package/new_package_form.html:112
 msgid "Cannot add any groups."
-msgstr ""
+msgstr "Cannot add any categories."
 
 #: ckan/templates_legacy/package/new_package_form.html:122
 #: ckanext/organizations/templates_legacy/organizations/package_form.html:134
@@ -5397,7 +5402,7 @@ msgstr ""
 
 #: ckan/templates_legacy/user/dashboard.html:30
 msgid "Create a group or a tag"
-msgstr ""
+msgstr "Create a category or a tag"
 
 #: ckan/templates_legacy/user/dashboard.html:31
 msgid "Or simply browse the repository"
@@ -5651,11 +5656,11 @@ msgstr ""
 
 #: ckanext/example_idatasetform/templates/package/snippets/package_metadata_fields.html:7
 msgid "Add to Groups"
-msgstr ""
+msgstr "Add to Categories"
 
 #: ckanext/example_idatasetform/templates/package/snippets/package_metadata_fields.html:10
 msgid "Select a group..."
-msgstr ""
+msgstr "Select a category..."
 
 #: ckanext/example_idatasetform/templates/package/snippets/package_metadata_fields.html:27
 msgid "Country Code"
@@ -5960,11 +5965,11 @@ msgstr ""
 #: ckanext/stats/templates/ckanext/stats/index.html:182
 #: ckanext/stats/templates_legacy/ckanext/stats/index.html:80
 msgid "Largest Groups"
-msgstr ""
+msgstr "Largest Categories"
 
 #: ckanext/stats/templates/ckanext/stats/index.html:127
 msgid "No groups"
-msgstr ""
+msgstr "No categories"
 
 #: ckanext/stats/templates/ckanext/stats/index.html:132
 #: ckanext/stats/templates/ckanext/stats/index.html:183
@@ -6019,22 +6024,70 @@ msgid ""
 "Choose a dataset attribute and find out which categories in that area have "
 "the most datasets. E.g. tags, groups, license, res_format, country."
 msgstr ""
+"Choose a dataset attribute and find out which categories in that area have "
+"the most datasets. E.g. tags, categories, license, res_format, country."
 
 #: ckanext/stats/templates_legacy/ckanext/stats/leaderboard.html:20
 msgid "Choose area"
 msgstr ""
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#: ckanext-ogdch/not_currently_used
+msgid "general.title"
+msgstr "opendata.admin.ch"
+
 #: ckanext-ogdch/ckanext/ogdch/templates/ckan/header.html
 msgid "header.national_council"
 msgstr "Federal Administration admin.ch"
 
-#: ckanext-ogdch/ckanext/ogdch/templates/ckan/header.html
+#: ckanext-ogdch/templates/ckan/header.html
 msgid "header.title"
-msgstr "Open Government Data Portal Switzerland"
+msgstr "opendata.admin.ch"
 
 #: ckanext-ogdch/ckanext/ogdch/templates/ckan/header.html
 msgid "header.portal_subtitle"
-msgstr "Freely available Swiss Government Data"
+msgstr "Swiss open government data pilot portal"
 
 #: ckanext-ogdch/ckanext/ogdch/templates/ckan/header.html
 msgid "header.homepage_link"
@@ -6060,18 +6113,54 @@ msgstr "FAQ"
 msgid "header.about_link"
 msgstr "About the portal"
 
-#: ckanext-ogdch/ckanext/ogdch/templates/ckan/footer.html
-msgid "footer.do_you_have_general_questions"
-msgstr "In case you have any questions regarding the OGD-Portal contact us:"
+#: ckanext-ogdch/templates/ckan/footer.html
+msgid "footer.do_you_have_general_questions_part_one"
+msgstr "Do you have questions about the open government data pilot portal? Answers to frequently asked questions can be found under"
 
-#: ckanext-ogdch/ckanext/ogdch/templates/ckan/footer.html
-msgid "footer.contact_form"
-msgstr "Contact Form"
+#: ckanext-ogdch/templates/ckan/footer.html
+msgid "footer.do_you_have_general_questions_part_two"
+msgstr "; alternatively, please feel free to"
 
-#: ckanext-ogdch/ckanext/ogdch/templates/ckan/footer.html
-msgid "footer.do_you_have_dataset_questions"
-msgstr "For questions regarding individual datasets, please get in touch with the department mentionend in the Author field."
+#: ckanext-ogdch/templates/ckan/footer.html
+msgid "footer.contact_us"
+msgstr "contact us"
+
+#: ckanext-ogdch/templates/ckan/footer.html
+msgid "footer.looking_for_a_single_dataset"
+msgstr "If you have questions regarding a particular data set, please contact the author indicated in the data set. If you have been unable to find a data set, please"
+
+#: ckanext-ogdch/templates/ckan/footer.html
+msgid "footer.looking_for_a_single_dataset_link"
+msgstr "let us know"
 
 #: ckanext-ogdch/ckanext/ogdch/templates/ckan/footer.html
 msgid "footer.legal_requirements"
-msgstr "Legal framework"
+msgstr "Terms of Use"
+
+#: ckanext-ogdch/templates/ckan/package/read.html
+msgid "dataset.in_the_category"
+msgstr "In the category"
+
+#: ckanext-ogdch/templates/ckan/package/read.html
+msgid "dataset.tags"
+msgstr "Tags"
+
+#: ckanext-ogdch/templates/ckan/package/search.html
+msgid "dataset.no_dataset_found_message_part_one"
+msgstr "Unfortunately, we could not find anything suitable. "
+
+#: ckanext-ogdch/templates/ckan/package/search.html
+msgid "dataset.no_dataset_found_message_part_two"
+msgstr " what data set you are looking for, so that we can try to close this gap."
+
+#: ckanext-ogdch/templates/ckan/package/search.html
+msgid "dataset.no_dataset_found_message_word_contact"
+msgstr "Let us know"
+
+#: ckanext-ogdch/templates/ckan/package/search.html
+msgid "dataset.result_title_single"
+msgstr "Result"
+
+#: ckanext-ogdch/templates/ckan/package/search.html
+msgid "dataset.result_title_many"
+msgstr "Results"

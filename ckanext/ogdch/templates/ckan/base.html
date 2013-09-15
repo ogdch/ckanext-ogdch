@@ -1,6 +1,16 @@
 {% ckan_extends %}
 
+{% block meta %}
+    {{ super() }}
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+{% endblock %}
+
 {% block styles %}
     {{ super() }}
     <link rel="stylesheet" href="/latest-css/{{ h.get_css_version() }}" />
+{% endblock %}
+
+{% block title %}
+	{%- block subtitle %}{% endblock -%}
+    {%- if self.subtitle()|trim %}{% endif -%}
 {% endblock %}

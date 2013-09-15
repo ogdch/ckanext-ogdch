@@ -15,10 +15,18 @@ class OgdchTheme(p.SingletonPlugin):
         p.toolkit.add_template_directory(config, 'templates/ckan')
 
     def get_helpers(self):
-        return {'get_css_version': self.get_css_version }
+        return {
+            'get_css_version': self.get_css_version,
+            'get_license_url': self.get_license_url
+        }
 
     def get_css_version(self):
         if config['ckanext.ogdch.css_version'] == 'random':
             return random.randint(100000, 9999999999)
 
         return config['ckanext.ogdch.css_version']
+
+    def get_license_url(self, pkg_dict):
+        for extra in pkg_dict.get('extras', []):
+            if extra.get('key') == 'license_url':
+                return extra.get('value')

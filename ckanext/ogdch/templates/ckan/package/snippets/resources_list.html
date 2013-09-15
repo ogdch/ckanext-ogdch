@@ -1,0 +1,25 @@
+<section id="dataset-resources" class="resources module-content">
+  <div class="row-fluid box-header">
+    <div class="span12">
+      <span>{{ _('Data and Resources') }}</span>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span12 box-container ogd-resource-list">
+      {% if resources %}
+        <ul class="resource-list">
+          {% for resource in resources %}
+            {% snippet 'package/snippets/resource_item.html', pkg=pkg, res=resource %}
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>
+          {# Comment out "add some" as action doesn't exist yet #}
+          {% trans url=h.url_for(controller='package', action='new_resource', id=pkg.name) %}
+          <p class="empty">This dataset has no data, <a href="{{ url }}">why not add some?</a>
+          {% endtrans %}
+        </p>
+      {% endif %}
+    </div>
+  </div>
+</section>
