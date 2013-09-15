@@ -271,7 +271,7 @@ msgstr "il parametro \"page\" deve essere un numero intero positivo"
 #: ckan/controllers/group.py:743
 #, python-format
 msgid "Unauthorized to read group %s"
-msgstr "Non sei autorizzato a leggere la categoria"
+msgstr "Non sei autorizzato a leggere la categoria %s"
 
 #: ckan/controllers/group.py:182
 msgid "Cannot render description"
@@ -339,7 +339,7 @@ msgstr "L'utente %r non è autorizzato a modificare le autorizzazioni di %s"
 #: ckan/controllers/group.py:512 ckan/controllers/group.py:566
 #, python-format
 msgid "Unauthorized to delete group %s"
-msgstr "Non autorizzato a eliminare la categoria"
+msgstr "Non autorizzato a eliminare la categoria %s"
 
 #: ckan/controllers/group.py:492
 msgid "Organization has been deleted."
@@ -352,12 +352,12 @@ msgstr "La categoria è stato eliminata."
 #: ckan/controllers/group.py:539
 #, python-format
 msgid "Unauthorized to add member to group %s"
-msgstr "Non sei autorizzato ad aggiungere membri alla categoria"
+msgstr "Non sei autorizzato ad aggiungere membri alla categoria %s"
 
 #: ckan/controllers/group.py:554
 #, python-format
 msgid "Unauthorized to delete group %s members"
-msgstr "Non sei autorizzato a eliminare membri della categoria"
+msgstr "Non sei autorizzato a eliminare membri della categoria %s"
 
 #: ckan/controllers/group.py:560
 msgid "Group member has been deleted."
@@ -1568,7 +1568,7 @@ msgstr "L'utente %s non è autorizzato a eliminare i categorie"
 #: ckan/logic/auth/delete.py:83
 #, python-format
 msgid "User %s not authorized to delete group %s"
-msgstr "L'utente %s non è autorizzato a eliminare la categoria"
+msgstr "L'utente %s non è autorizzato a eliminare la categoria %s"
 
 #: ckan/logic/auth/delete.py:92
 #, python-format
@@ -1645,12 +1645,12 @@ msgstr "Devi essere un amministratore di sistema per modificare un campo di un e
 #: ckan/logic/auth/update.py:120
 #, python-format
 msgid "User %s not authorized to change state of group %s"
-msgstr "L'utente %s non è autorizzato a cambiare lo stato della categoria"
+msgstr "L'utente %s non è autorizzato a cambiare lo stato della categoria %s"
 
 #: ckan/logic/auth/update.py:129
 #, python-format
 msgid "User %s not authorized to edit permissions of group %s"
-msgstr "L'utente %s non è autorizzato a modificare i permessi della categoria"
+msgstr "L'utente %s non è autorizzato a modificare i permessi della categoria %s"
 
 #: ckan/logic/auth/update.py:141
 #, python-format
