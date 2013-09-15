@@ -6111,7 +6111,7 @@ msgstr "FAQ"
 
 #: ckanext-ogdch/templates/ckan/header.html
 msgid "header.about_link"
-msgstr "Informazioni sul portale"
+msgstr "A proposito del portale"
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.do_you_have_general_questions_part_one"

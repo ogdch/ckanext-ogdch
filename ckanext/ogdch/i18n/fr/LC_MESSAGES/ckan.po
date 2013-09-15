@@ -6119,7 +6119,7 @@ msgstr "Vous avez des questions au sujet du portail pilote Open Government Data 
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.do_you_have_general_questions_part_two"
-msgstr "les réponses aux questions fréquemment posées. Si votre question n’y est pas, n’hésitez pas à nous"
+msgstr " les réponses aux questions fréquemment posées. Si votre question n’y est pas, n’hésitez pas à nous"
 
 #: ckanext-ogdch/templates/ckan/footer.html
 msgid "footer.contact_us"
