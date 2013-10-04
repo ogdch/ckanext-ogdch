@@ -105,9 +105,7 @@
 {% block secondary_content %}
   {% if c.page.item_count != 0 %}
     {% for facet in c.facet_titles %}
-      {% if facet != 'organization' and facet != 'license_id' %}
         {{ h.snippet('snippets/facet_list.html', title=c.facet_titles[facet], name=facet) }}
-      {% endif %}
     {% endfor %}
   {% endif %}
 {% endblock %}
