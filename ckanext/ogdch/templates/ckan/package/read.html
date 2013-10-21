@@ -22,12 +22,21 @@
       </h1>
       {% if c.pkg_notes_formatted %}
         <div class="notes embedded-content">
-          <span class="ogd_title">{{ _('dataset.in_the_category') }}:</span>
-
+          {% if pkg.organization %}
+            <div>
+                <span class="ogd_title">{{ _('Organization') }}: </span>
+                <a href="{{ h.url_for(controller='package', action='search', organization=pkg.organization.name) }}">
+                    {{ pkg.organization.title }}
+                </a>
+            </div>
+          {% endif %}
           {% if pkg.groups %}
-            <a href="{{ h.url_for(controller='package', action='search', groups=pkg.groups[0].name) }}">
-              {{ pkg.groups[0].title or pkg.groups[0].name }}
-            </a>
+            <div>
+                <span class="ogd_title">{{ _('dataset.in_the_category') }}:</span>
+                <a href="{{ h.url_for(controller='package', action='search', groups=pkg.groups[0].name) }}">
+                  {{ pkg.groups[0].title or pkg.groups[0].name }}
+                </a>
+            </div>
           {% endif %}
 
           {{ c.pkg_notes_formatted }}
@@ -46,6 +55,9 @@
 
   {% block package_additional_info %}
     {% snippet "package/snippets/additional_info.html", pkg_dict=pkg %}
+  {% endblock %}
+
+  {% block package_organization %}
   {% endblock %}
 
 {% endblock %}
