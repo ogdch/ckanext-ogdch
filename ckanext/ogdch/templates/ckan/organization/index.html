@@ -16,7 +16,7 @@
       <div id="org" class="row-fluid">
           <div id="org_tagline" class="span12">
              <h2>{{ _('Organizations') }}</h2>
-             <h3>Hier finden Sie eine Liste aller mit eigenen Daten am Portal beteiligten Organisationen. Sie können eine Liste der Datensätze einer Organisation aufrufen, wenn sie auf deren Namen klicken.</h3>
+             <h3>{{ _('organization.tagline') }}</h3>
           </div>
       {% if c.page.items or request.params %}
         {% snippet "organization/snippets/organization_list.html", organizations=c.page.items %}

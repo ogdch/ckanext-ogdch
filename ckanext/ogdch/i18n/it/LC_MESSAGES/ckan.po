@@ -6110,6 +6110,10 @@ msgid "header.faq_link"
 msgstr "FAQ"
 
 #: ckanext-ogdch/templates/ckan/header.html
+msgid "header.organization_link"
+msgstr "Organizzazione"
+
+#: ckanext-ogdch/templates/ckan/header.html
 msgid "header.about_link"
 msgstr "A proposito del portale"
 
@@ -6164,3 +6168,7 @@ msgstr "Risultato"
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.result_title_many"
 msgstr "Risultati"
+
+#: ckanext-ogdch/templates/ckan/organization/index.html
+msgid "organization.tagline"
+msgstr "Di seguito trovate l’elenco di tutte le organizzazioni presenti sul portale con i loro rispetti dati. Cliccando sul nome dell’organizzazione desiderata, potrete direttamente visualizzare gli insiemi di dati."
