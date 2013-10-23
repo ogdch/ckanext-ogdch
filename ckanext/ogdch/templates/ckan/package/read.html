@@ -25,7 +25,7 @@
           {% if pkg.organization %}
             <div>
                 <span class="ogd_title">{{ _('Organization') }}: </span>
-                <a href="{{ h.url_for(controller='package', action='search', organization=pkg.organization.name) }}">
+                <a href="{{ h.url_for(controller='organization', action='read', id=pkg.organization.id) }}">
                     {{ pkg.organization.title }}
                 </a>
             </div>
