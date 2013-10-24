@@ -42,7 +42,7 @@ class OgdchTheme(p.SingletonPlugin):
             org = get_action('organization_show')(context,{'id': organization_id})
             for extra in org.get('extras', []):
                 if extra.get('key') == 'website':
-                    return extra.get('value')
+                    return extra.get('value').rstrip('/')
             return ''
         except NotFound,e:
             raise ValueError('Organization not found') 
