@@ -19,21 +19,18 @@
       {% block datasets %}
         <span class="dataset_count">
           <span class="sprite" id="icon_data"></span>
-          {{ ungettext('{num} Dataset', '{num} Datasets', organization.packages).format(num=organization.packages) }}
+          <a href="{{ url }}" title="{{ _('View {organization_name}').format(organization_name=organization.display_name) }}">
+            {{ ungettext('{num} Dataset', '{num} Datasets', organization.packages).format(num=organization.packages) }}
+          </a>
         </span>
       {% endblock %}
-      <span class="org_website">
-          <span class="sprite" id="icon_globe"></span>
-          <a href="{{ organization.url }}" title="Website of {{ organization.display_name }}">www.foo.bar.org</a>
-      </span>
-      {#
-      {% if organization.website %}
+      {% set website = h.get_organization_url(organization.id) %}
+      {% if website %}
         <span class="org_website">
-            <span class="sprite" id="icon_globe"></span>
-            <a href="{{ organization.website }}" title="Website of {{ organization.display_name }}">{{ organization.website }}</a>
+            <span class="sprite" id="icon_www"></span>
+            <a href="{{ website }}" title="Website of {{ organization.display_name }}">{{ website|replace('http://', '') }}</a>
         </span>
-      {% endif %}
-      #}
+      {% endif %} 
     </div>
   </div>
 </li>

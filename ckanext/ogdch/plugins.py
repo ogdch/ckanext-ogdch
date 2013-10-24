@@ -1,5 +1,8 @@
 import ckan
 import ckan.plugins as p
+from ckan.lib.base import c
+from ckan import model
+from ckan.logic import ValidationError, NotFound, get_action
 import random
 from pylons import config
 
@@ -17,7 +20,8 @@ class OgdchTheme(p.SingletonPlugin):
     def get_helpers(self):
         return {
             'get_css_version': self.get_css_version,
-            'get_license_url': self.get_license_url
+            'get_license_url': self.get_license_url,
+            'get_organization_url': self.get_organization_url,
         }
 
     def get_css_version(self):
@@ -30,3 +34,15 @@ class OgdchTheme(p.SingletonPlugin):
         for extra in pkg_dict.get('extras', []):
             if extra.get('key') == 'license_url':
                 return extra.get('value')
+        return ''
+
+    def get_organization_url(self, organization_id):
+        context = {'model':model,'user':c.user}
+        try:
+            org = get_action('organization_show')(context,{'id': organization_id})
+            for extra in org.get('extras', []):
+                if extra.get('key') == 'website':
+                    return extra.get('value')
+            return ''
+        except NotFound,e:
+            raise ValueError('Organization not found') 
