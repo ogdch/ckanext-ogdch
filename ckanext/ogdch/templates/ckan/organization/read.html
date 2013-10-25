@@ -71,12 +71,6 @@
           {% endif %}
             {{ h.snippet('snippets/sort_by.html', sort=c.sort_by_selected) }}
 
-            {% if c.fields -%}
-              <span>
-                {{ form.hidden_from_list(fields=c.fields) }}
-              </span>
-            {%- endif %}
-
             <div id="dataset-search-ext">{% block dataset_search_ext %}{% endblock %}</div>
         </h2>    
         </div>
