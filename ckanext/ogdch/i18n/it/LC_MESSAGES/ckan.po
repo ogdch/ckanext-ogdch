@@ -2558,8 +2558,8 @@ msgstr[1] "{num} Set di dati"
 
 #: ckan/templates/group/snippets/group_item.html:35
 #: ckan/templates/organization/snippets/organization_item.html:35
-msgid "0 Datasets"
-msgstr "0 Datasets"
+msgid "0 Set di dati"
+msgstr "0 Set di dati"
 
 #: ckan/templates/home/index.html:3 ckan/templates_legacy/home/index.html:9
 msgid "Welcome"
