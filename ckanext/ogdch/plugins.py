@@ -6,6 +6,9 @@ from ckan.logic import ValidationError, NotFound, get_action
 import random
 from pylons import config
 
+import logging
+log = logging.getLogger(__name__)
+
 class OgdchTheme(p.SingletonPlugin):
     """
     Plugin containg the theme for OGDCH
@@ -45,4 +48,5 @@ class OgdchTheme(p.SingletonPlugin):
                     return extra.get('value').rstrip('/')
             return ''
         except NotFound,e:
-            raise ValueError('Organization not found') 
+            log.error('Organization %s not found' % organization_id)
+            return ''
