@@ -49,6 +49,9 @@
         ) }}
         <li><a href="/{{ request.environ.CKAN_LANG }}/apps" title="{{ _('header.apps_link') }}">{{ _('header.apps_link') }}</a></li>
         <li><a href="/{{ request.environ.CKAN_LANG }}/faq" title="{{ _('header.faq_link') }}">{{ _('header.faq_link') }}</a></li>
+        {{ h.build_nav_main(
+          ('organizations_index', _('header.organization_link'))
+        ) }}
         <li><a href="/{{ request.environ.CKAN_LANG }}/about" title="{{ _('header.about_link') }}">{{ _('header.about_link') }}</a></li>
         {% endblock %}
       </ul>

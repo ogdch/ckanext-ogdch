@@ -6109,6 +6109,10 @@ msgstr "Applications"
 msgid "header.faq_link"
 msgstr "FAQ"
 
+#: ckanext-ogdch/templates/ckan/header.html
+msgid "header.organization_link"
+msgstr "Organizations"
+
 #: ckanext-ogdch/ckanext/ogdch/templates/ckan/header.html
 msgid "header.about_link"
 msgstr "About the portal"
@@ -6164,3 +6168,7 @@ msgstr "Result"
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.result_title_many"
 msgstr "Results"
+
+#: ckanext-ogdch/templates/ckan/organization/index.html
+msgid "organization.tagline"
+msgstr "Here you will find a list of all organisations with data on the portal. You can call up a list of any organisation’s data records by clicking on its name."

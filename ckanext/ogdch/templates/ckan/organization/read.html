@@ -1,0 +1,104 @@
+{% ckan_extends %}
+
+{% block page_header %}{% endblock %}
+
+{% block zero_content %}
+<div class="row-fluid">
+  <div class="span12" id="dataset-search-box">
+    <form class="dataset-search clearfix" method="get" data-module="select-switch">
+      <span class="control-group search-giant">
+        <input type="text" class="search" name="q" value="{{ c.q }}" autocomplete="off" placeholder="{{ _('Search...') }}" />
+        <button type="submit" value="search">{{ _('Submit') }}</button>
+      </span>
+    </form>
+  </div>
+</div>
+<div class="row-fluid">
+  <div id="org_tagline" class="span12">
+    <h2>{{ c.group_dict.display_name }}</h2>
+    <h3>{{ c.group_dict.description }}</h3>
+  </div> 
+</div>
+<div class="row-fluid">
+  <div class="span12" id="org-search-result">
+    {% if request.params and c.page.item_count != 0 %}
+      <h3>
+        {% snippet 'snippets/search_result_text.html', query=c.q, count=c.page.item_count, type='dataset' %}
+      </h3>
+    {% elif request.params and c.page.item_count == 0 %}
+      <p class="extra">{{ _('dataset.no_dataset_found_message_part_one') }}<a href="/{{ request.environ.CKAN_LANG }}/contact/dataset" title="{{ _('dataset.no_dataset_found_message_word_contact') }}">{{ _('dataset.no_dataset_found_message_word_contact') }}</a>{{ _('dataset.no_dataset_found_message_part_two') }}</p>
+    {% endif %}
+  </div>
+</div>
+
+{% if c.page.item_count != 0 %}
+  <section class="module">
+    <div class="module-content">
+      <div class="results">
+        <div class="filter-list">
+          {% for field in c.fields_grouped %}
+            {% set search_facets_items = c.search_facets.get(field)['items'] %}
+            <span class="facet">{{ c.facet_titles.get(field) }}:</span>
+            {% for value in c.fields_grouped[field] %}
+              <span class="filtered pill">
+                {%- if c.translated_fields and c.translated_fields.has_key((field,value)) -%}
+                  {{ c.translated_fields[(field,value)] }}
+                {%- else -%}
+                  {{ h.list_dict_filter(search_facets_items , 'name', 'display_name', value) }}
+                {%- endif %}
+                <a href="{{ c.remove_field(field, value) }}" class="remove" title="{{ _('Remove') }}"><i class="icon-remove"></i></a>
+              </span>
+            {% endfor %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
+{% endblock %}
+
+{% block primary_content %}
+  {% if c.page.item_count != 0 %}
+    <section class="module">
+      <div class="row-fluid module-header">
+        <form id="dataset-search-filter" class="dataset-search clearfix" method="get" data-module="select-switch">
+        <div class="span12">
+        <h2 class="module-heading">
+          {% if c.page.item_count == 1 %}
+            <span class="module-title">{{ _('dataset.result_title_single') }}</span>
+          {% else %}
+            <span class="module-title">{{ _('dataset.result_title_many') }}</span>
+          {% endif %}
+            {{ h.snippet('snippets/sort_by.html', sort=c.sort_by_selected) }}
+
+            <div id="dataset-search-ext">{% block dataset_search_ext %}{% endblock %}</div>
+        </h2>    
+        </div>
+        <input type="hidden" name="q" value="{{ c.q }}" />
+        </form>
+      </div>
+      <div class="module-content datasets">        
+        {% if c.query_error %}
+          {% trans %}
+            <p><strong>There was an error while searching.</strong> Please try again.</p>
+          {% endtrans %}
+        {% endif %}
+        {{ h.snippet('snippets/package_list.html', packages=c.page.items) }}
+      </div>
+
+      {{ c.page.pager(q=c.q) }}
+    </section>
+  {% endif %}  
+{% endblock %}
+
+{% block subtitle %}{{ c.group_dict.display_name }}  | {{ _('general.title') }}{% endblock %}
+
+
+
+
+{% block secondary_content %}
+{% for facet in c.facet_titles %}
+        {{ h.snippet('snippets/facet_list.html', title=c.facet_titles[facet], name=facet, extras={'id':c.group_dict.id}) }}
+    {% endfor %}
+{% endblock %}
+
