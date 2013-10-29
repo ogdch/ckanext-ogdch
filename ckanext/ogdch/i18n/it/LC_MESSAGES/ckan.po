@@ -2553,8 +2553,8 @@ msgstr "Questa categoria non ha descrizioni"
 #: ckan/templates/organization/snippets/organization_item.html:33
 msgid "{num} Dataset"
 msgid_plural "{num} Datasets"
-msgstr[0] "{num} Dataset"
-msgstr[1] "{num} Dataset"
+msgstr[0] "{num} Set di dati"
+msgstr[1] "{num} Set di dati"
 
 #: ckan/templates/group/snippets/group_item.html:35
 #: ckan/templates/organization/snippets/organization_item.html:35
