@@ -68,7 +68,6 @@
     <section class="module">
       <div class="row-fluid module-header">
         <form id="dataset-search-filter" class="dataset-search clearfix" method="get" data-module="select-switch">
-        <input type="hidden" name="q" value="{{ c.q }}" />
         <div class="span12">
         <h2 class="module-heading">
           {% if c.page.item_count == 1 %}
@@ -87,6 +86,7 @@
             <div id="dataset-search-ext">{% block dataset_search_ext %}{% endblock %}</div>
         </h2>    
         </div>
+        <input type="hidden" name="q" value="{{ c.q }}" />
         </form>
       </div>
       <div class="module-content datasets">        
