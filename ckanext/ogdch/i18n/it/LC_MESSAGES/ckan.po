@@ -2553,13 +2553,13 @@ msgstr "Questa categoria non ha descrizioni"
 #: ckan/templates/organization/snippets/organization_item.html:33
 msgid "{num} Dataset"
 msgid_plural "{num} Datasets"
-msgstr[0] "{num} Dataset"
-msgstr[1] "{num} Dataset"
+msgstr[0] "{num} Set di dati"
+msgstr[1] "{num} Set di dati"
 
 #: ckan/templates/group/snippets/group_item.html:35
 #: ckan/templates/organization/snippets/organization_item.html:35
-msgid "0 Datasets"
-msgstr "0 Datasets"
+msgid "0 Set di dati"
+msgstr "0 Set di dati"
 
 #: ckan/templates/home/index.html:3 ckan/templates_legacy/home/index.html:9
 msgid "Welcome"
@@ -6110,6 +6110,10 @@ msgid "header.faq_link"
 msgstr "FAQ"
 
 #: ckanext-ogdch/templates/ckan/header.html
+msgid "header.organization_link"
+msgstr "Organizzazione"
+
+#: ckanext-ogdch/templates/ckan/header.html
 msgid "header.about_link"
 msgstr "A proposito del portale"
 
@@ -6164,3 +6168,7 @@ msgstr "Risultato"
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.result_title_many"
 msgstr "Risultati"
+
+#: ckanext-ogdch/templates/ckan/organization/index.html
+msgid "organization.tagline"
+msgstr "Di seguito trovate l’elenco di tutte le organizzazioni presenti sul portale con i loro rispetti dati. Cliccando sul nome dell’organizzazione desiderata, potrete direttamente visualizzare gli insiemi di dati."

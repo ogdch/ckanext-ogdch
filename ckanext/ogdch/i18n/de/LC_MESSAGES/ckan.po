@@ -6110,6 +6110,10 @@ msgid "header.faq_link"
 msgstr "FAQ"
 
 #: ckanext-ogdch/templates/ckan/header.html
+msgid "header.organization_link"
+msgstr "Organisationen"
+
+#: ckanext-ogdch/templates/ckan/header.html
 msgid "header.about_link"
 msgstr "Über das Portal"
 
@@ -6164,3 +6168,7 @@ msgstr "Resultat"
 #: ckanext-ogdch/templates/ckan/package/search.html
 msgid "dataset.result_title_many"
 msgstr "Resultate"
+
+#: ckanext-ogdch/templates/ckan/organization/index.html
+msgid "organization.tagline"
+msgstr "Hier finden Sie eine Liste aller mit eigenen Daten am Portal beteiligten Organisationen. Sie können eine Liste der Datensätze einer Organisation aufrufen, wenn sie auf deren Namen klicken."

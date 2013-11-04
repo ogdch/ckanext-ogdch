@@ -1,18 +1,6 @@
 {% ckan_extends %}
 
-{% import 'macros/form.html' as form %}
-
-{% block subtitle %}{{ _('header.data_link') }} | {{ _('general.title') }}{% endblock %}
-
-{% block add_action_content %}
-  {% if h.check_access('package_create') %}
-    {% link_for _('Add Dataset'), controller='package', action='new', class_='btn btn-primary', icon='plus-sign-alt' %}
-  {% endif %}
-{% endblock %}
-
-{% block breadcrumb_content %}
-  <li class="active">{{ h.nav_link(_('Datasets'), controller='package', action='search', highlight_actions = 'new index') }}</li>
-{% endblock %}
+{% block page_header %}{% endblock %}
 
 {% block zero_content %}
 <div class="row-fluid">
@@ -26,7 +14,13 @@
   </div>
 </div>
 <div class="row-fluid">
-  <div class="span12" id="search-result-sentence">
+  <div id="org_tagline" class="span12">
+    <h2>{{ c.group_dict.display_name }}</h2>
+    <h3>{{ c.group_dict.description }}</h3>
+  </div> 
+</div>
+<div class="row-fluid">
+  <div class="span12" id="org-search-result">
     {% if request.params and c.page.item_count != 0 %}
       <h3>
         {% snippet 'snippets/search_result_text.html', query=c.q, count=c.page.item_count, type='dataset' %}
@@ -77,12 +71,6 @@
           {% endif %}
             {{ h.snippet('snippets/sort_by.html', sort=c.sort_by_selected) }}
 
-            {% if c.fields -%}
-              <span>
-                {{ form.hidden_from_list(fields=c.fields) }}
-              </span>
-            {%- endif %}
-
             <div id="dataset-search-ext">{% block dataset_search_ext %}{% endblock %}</div>
         </h2>    
         </div>
@@ -103,10 +91,14 @@
   {% endif %}  
 {% endblock %}
 
+{% block subtitle %}{{ c.group_dict.display_name }}  | {{ _('general.title') }}{% endblock %}
+
+
+
+
 {% block secondary_content %}
-  {% if c.page.item_count != 0 %}
-    {% for facet in c.facet_titles %}
-        {{ h.snippet('snippets/facet_list.html', title=c.facet_titles[facet], name=facet) }}
+{% for facet in c.facet_titles %}
+        {{ h.snippet('snippets/facet_list.html', title=c.facet_titles[facet], name=facet, extras={'id':c.group_dict.id}) }}
     {% endfor %}
-  {% endif %}
 {% endblock %}
+

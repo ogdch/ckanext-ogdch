@@ -1,0 +1,5 @@
+<ul class="orgs span12">
+  {% for organization in organizations %}
+    {% snippet "organization/snippets/organization_item.html", organization=organization %}
+  {% endfor %}
+</ul>
