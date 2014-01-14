@@ -2904,7 +2904,7 @@ msgstr "Il n'y a pas de description pour cette ressource"
 
 #: ckan/templates/package/resource_read.html:55
 msgid "From the dataset abstract"
-msgstr ""
+msgstr "De l'abstrait de le jeu de données"
 
 #: ckan/templates/package/resource_read.html:57
 #, python-format

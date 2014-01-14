@@ -2906,7 +2906,7 @@ msgstr "Non ci sono descrizioni per questa risorsa"
 
 #: ckan/templates/package/resource_read.html:55
 msgid "From the dataset abstract"
-msgstr ""
+msgstr "Dal astratta del set di dati"
 
 #: ckan/templates/package/resource_read.html:57
 #, python-format
