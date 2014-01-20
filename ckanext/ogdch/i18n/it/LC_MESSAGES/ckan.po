@@ -317,8 +317,8 @@ msgstr "Formati"
 #: ckan/controllers/group.py:255 ckan/controllers/home.py:69
 #: ckan/controllers/package.py:241 ckan/lib/helpers.py:530
 #: ckan/templates_legacy/package/resource_read.html:106
-msgid "Licence"
-msgstr "Licenza"
+msgid "Licenses"
+msgstr "Licenze"
 
 #: ckan/controllers/group.py:331
 msgid "Unauthorized to create a group"
