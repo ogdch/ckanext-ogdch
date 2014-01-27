@@ -1,13 +1,13 @@
-import ckan
 import ckan.plugins as p
 from ckan.lib.base import c
 from ckan import model
-from ckan.logic import ValidationError, NotFound, get_action
+from ckan.logic import NotFound, get_action
 import random
 from pylons import config
 
 import logging
 log = logging.getLogger(__name__)
+
 
 class OgdchTheme(p.SingletonPlugin):
     """
@@ -40,13 +40,21 @@ class OgdchTheme(p.SingletonPlugin):
         return ''
 
     def get_organization_url(self, organization_id):
-        context = {'model':model,'user':c.user}
+        context = {
+            'model': model,
+            'user': c.user
+        }
         try:
-            org = get_action('organization_show')(context,{'id': organization_id})
+            org = get_action('organization_show')(
+                context,
+                {
+                    'id': organization_id
+                }
+            )
             for extra in org.get('extras', []):
                 if extra.get('key') == 'website':
                     return extra.get('value').rstrip('/')
             return ''
-        except NotFound,e:
+        except NotFound:
             log.error('Organization %s not found' % organization_id)
             return ''
