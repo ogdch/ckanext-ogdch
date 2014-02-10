@@ -2888,7 +2888,7 @@ msgstr "Visualizza"
 #: ckan/templates/package/resource_read.html:29
 #: ckan/templates_legacy/package/resource_read.html:73
 msgid "API Endpoint"
-msgstr "API Endpoint"
+msgstr "Link"
 
 #: ckan/templates/package/resource_read.html:31
 #: ckan/templates/package/snippets/resource_item.html:34
