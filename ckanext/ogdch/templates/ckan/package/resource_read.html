@@ -18,8 +18,10 @@
               <li>
                 {% if res.resource_type in ('listing', 'service') %}
                   <a class="btn btn-primary resource-url-analytics resource-type-{{ res.resource_type }}" href="{{ res.url }}"><i class="icon-eye-open"></i> {{ _('View') }}</a>
-                {% elif  res.resource_type == 'api' %}
+                {% elif  res.format.lower() == 'wms' %}
                   <a class="btn btn-primary resource-url-analytics resource-type-{{ res.resource_type }}" href="{{ res.url }}?Service=WMS&Request=Getcapabilities"><i class="icon-key"></i> {{ _('API Endpoint') }}</a>
+                {% elif  res.format.lower() == 'wfs' %}
+                  <a class="btn btn-primary resource-url-analytics resource-type-{{ res.resource_type }}" href="{{ res.url }}?Service=WFS&Request=Getcapabilities"><i class="icon-key"></i> {{ _('API Endpoint') }}</a>
                 {% elif not res.can_be_previewed %}
                   <a class="btn btn-primary resource-url-analytics resource-type-{{ res.resource_type }}" href="{{ res.url }}"><i class="icon-external-link"></i> {{ _('Go to resource') }}</a>
                 {% else %}
