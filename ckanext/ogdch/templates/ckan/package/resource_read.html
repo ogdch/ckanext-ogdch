@@ -10,7 +10,7 @@
         <div class="actions">
           <ul>
             {% if h.check_access('package_update', {'id':pkg.id }) %}
-              {% super() %}
+              {{ super() }}
             {% endif %}
             {% if res.url %}
               <li>
@@ -28,7 +28,7 @@
               </li>
             {% endif %}
             {% if 'datastore' in g.plugins %}
-              {% super() %}
+              {{ super() }}
             {% endif %}
           </ul>
         </div>
@@ -52,7 +52,7 @@
         </div>
       </div>
       {% block data_preview %}
-        {% super() %}
+        {{ super() }}
       {% endblock %}
     </section>
   {% endblock %}
