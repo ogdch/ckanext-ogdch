@@ -8,11 +8,9 @@
     <section class="module module-resource">
       <div class="module-content">
         <div class="actions">
-          {% block resource_actions %}
           <ul>
-            {% block resource_actions_inner %}
             {% if h.check_access('package_update', {'id':pkg.id }) %}
-              {{ super() }}
+              {% super() %}
             {% endif %}
             {% if res.url %}
               <li>
@@ -30,11 +28,9 @@
               </li>
             {% endif %}
             {% if 'datastore' in g.plugins %}
-              {{ super() }}
+              {% super() %}
             {% endif %}
-            {% endblock %}
           </ul>
-          {% endblock %}
         </div>
         {% block resource_content %}
           {% block resource_read_title %}{{ super() }}{% endblock %}
@@ -53,10 +49,10 @@
               <p>{% trans dataset=c.package.title, url=h.url_for(controller='package', action='read', id=c.package['name']) %}Source: <a href="{{ url }}">{{ dataset }}</a>{% endtrans %}
             {% endif %}
         {% endblock %}
-          </div>
+        </div>
       </div>
       {% block data_preview %}
-        {{ super() }}
+        {% super() %}
       {% endblock %}
     </section>
   {% endblock %}
