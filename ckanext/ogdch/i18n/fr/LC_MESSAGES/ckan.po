@@ -315,8 +315,8 @@ msgstr "Formats"
 #: ckan/controllers/group.py:255 ckan/controllers/home.py:69
 #: ckan/controllers/package.py:241 ckan/lib/helpers.py:530
 #: ckan/templates_legacy/package/resource_read.html:106
-msgid "Licence"
-msgstr "Licence"
+msgid "Licenses"
+msgstr "Licences"
 
 #: ckan/controllers/group.py:331
 msgid "Unauthorized to create a group"
@@ -2904,7 +2904,7 @@ msgstr "Il n'y a pas de description pour cette ressource"
 
 #: ckan/templates/package/resource_read.html:55
 msgid "From the dataset abstract"
-msgstr ""
+msgstr "De l'abstrait de le jeu de données"
 
 #: ckan/templates/package/resource_read.html:57
 #, python-format
