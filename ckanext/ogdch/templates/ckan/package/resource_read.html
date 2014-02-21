@@ -18,9 +18,9 @@
                   <a class="btn btn-primary resource-url-analytics resource-type-{{ res.resource_type }}" href="{{ res.url }}"><i class="icon-eye-open"></i> {{ _('View') }}</a>
                 {% elif (res.format.lower() == 'wms') or (res.format.lower() == 'wfs') %}
                   <a class="btn btn-primary resource-url-analytics resource-type-{{ res.resource_type }}" href="{{ res.url }}?Service={{ res.format.upper() }}&Request=Getcapabilities"><i class="icon-key"></i> {{ _('API Endpoint') }}</a>
-              {% else %}
-                <i class="icon-download"></i> {{ _('Download') }}
-              {%endif %}
+                {% else %}
+                  <a class="btn btn-primary resource-url-analytics resource-type-{{ res.resource_type }}" href="{{ res.url }}"><i class="icon-download"></i> {{ _('Download') }}</a>
+                {%endif %}
               </li>
             {% endif %}
             {% if 'datastore' in g.plugins %}
