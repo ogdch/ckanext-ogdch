@@ -80,6 +80,10 @@
               <a href="{{ h.get_license_url(pkg_dict) }}" property="dc:rights">
                 <span class="license-title">{{ pkg_dict.license_title }}</span>
               </a>
+            {% elif 'license_url' in pkg_dict %}
+              <a href="{{ pkg_dict.license_url }}" property="dc:rights">
+                <span class="license-title">{{ pkg_dict.license_title }}</span>
+              </a>
             {% else %}
               <span class="license-title" property="dc:rights">
                 {{ pkg_dict.license_title }}
